@@ -9,7 +9,7 @@
 					echo '<p class="screen-reader-text">' . get_bloginfo( 'name' ) . '</p>';
 				endif;
 				?>
-				<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url" class="navbar-brand custom-logo-link"><?php the_custom_logo(); ?></a>
+				<div class="navbar-brand custom-logo-link max-w-[160px]"><?php the_custom_logo(); ?></div>
 			</div>
 			<?php
 			wp_nav_menu(

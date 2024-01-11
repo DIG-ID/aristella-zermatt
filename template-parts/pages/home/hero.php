@@ -4,8 +4,8 @@
 			<section class="az-container py-40 !px-16">
 				<div class="az-container-grid">
 					<div class="col-span-4">
-						<h1 class="mb-12">WILLKOMMEN IN ZERMATT!</h1>
-						<h1 class="title-sm mb-12">testing title-sm</h1>
+						<h1 class="title-normal mb-12">WILLKOMMEN IN ZERMATT!</h1>
+						<h1 class="title-caption mb-12">testing title-caption</h1>
 						<p class="text-body mb-12">Testing text-body Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptas non voluptatibus quas, esse magni. Inventore quae culpa tempora assumenda? Rerum aperiam unde deleniti pariatur mollitia consequatur quisquam dolorum ratione.</p>
 						<p class="title-overline">Testing title-overline</p>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas culpa accusantium nulla neque ipsam officiis a et laudantium rerum repudiandae quam nobis minima iste veritatis placeat, eveniet velit magni molestiae?</p>
