@@ -1,11 +1,29 @@
 h1
     @apply text-5xl
 
-.title-normal
-    @apply font-primary_bold text-black uppercase
-
-.title-caption
-    @apply font-primary_light text-black uppercase text-xl tracking-tighter
-
 .text-body
     @apply font-primary text-black text-base tracking-tighter
+
+.title
+    &-normal
+        @apply font-primary_bold text-black uppercase
+    &-caption
+        @apply font-primary_light text-black uppercase text-xl tracking-tighter
+    &-plusblack
+        @apply font-primary_bold text-black uppercase text-5xl
+        &::before
+            content: "\e900"
+            font-family: 'icomoon' !important
+            @apply text-black text-4xl leading-10 mr-4 mt-4
+    &-plusred
+        @apply font-primary_bold text-black uppercase text-5xl
+        &::before
+            content: "\e900"
+            font-family: 'icomoon' !important
+            @apply text-red text-4xl leading-10 mr-4 mt-4
+    &-plusblue
+        @apply font-primary_bold text-blue uppercase text-5xl
+        &::before
+            content: "\e900"
+            font-family: 'icomoon' !important
+            @apply text-blue text-4xl leading-10 mr-4 mt-4

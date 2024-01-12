@@ -1,5 +1,5 @@
 <header id="header-main" class="header-main w-full fixed top-0 z-40 bg-white" itemscope itemtype="http://schema.org/WebSite">
-	<nav class="navigation-main bg-black w-full flex items-center py-8 xl:py-10" role="navigation" aria-label="<?php esc_attr_e( 'main navigation', 'aristella' ); ?>">
+	<nav class="navigation-main bg-black w-full flex items-center py-8 xl:py-6" role="navigation" aria-label="<?php esc_attr_e( 'main navigation', 'aristella' ); ?>">
 		<div class="menu relative w-full max-w-[1320px] mx-auto">
 			<div class="site-branding">
 				<?php

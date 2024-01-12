@@ -29,6 +29,7 @@ module.exports = {
         'black': '#45454c',
         'red': '#de3636',
         'beige': '#fff8ec',
+        'blue': '#4983bb'
       },
     },
   },
