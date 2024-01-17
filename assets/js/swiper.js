@@ -8,14 +8,15 @@ document.addEventListener("DOMContentLoaded", () => {
 				lazy: true,
 				slidesPerView: 1,
 				spaceBetween: 0,
-				speed: 800,
+				speed: 1000,
 				loop: true,
-				effect: "fade",
+				effect: "slide",
+    			direction: 'horizontal',
 				fadeEffect: {
 					crossFade: true
 				},
 				autoplay: {
-					delay: 2500,
+					delay: 4500,
 					disableOnInteraction: false,
 				},
 			});
