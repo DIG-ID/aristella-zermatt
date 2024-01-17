@@ -1,5 +1,4 @@
-<section class="section-teasers xl:pb-40 overflow-hidden">
-
+<section class="section-teasers overflow-hidden">
     <?php 
     $roomsImg = get_field('teasers_rooms_image');
     $size = 'full';
@@ -12,8 +11,8 @@
             <div class="col-span-1 md:col-span-8 xl:col-span-10 col-start-1 md:col-start-1 xl:col-start-2">
                 <h3 class="title-caption mb-4"><?php the_field( 'teasers_rooms_pre-title' ); ?></h3>
                 <h2 class="title-plusblack mb-8"><?php the_field( 'teasers_rooms_title' ); ?></h2>
-                <p class="text-body font-bold mb-5"><?php the_field( 'teasers_rooms_subtitle' ); ?></p>
-                <p class="text-body"><?php the_field( 'teasers_rooms_text' ); ?></p>
+                <p class="text-body text-black font-bold mb-5"><?php the_field( 'teasers_rooms_subtitle' ); ?></p>
+                <p class="text-body text-black"><?php the_field( 'teasers_rooms_text' ); ?></p>
             </div>
         </div>
     </div>
@@ -30,8 +29,8 @@
             <div class="col-span-1 md:col-span-8 xl:col-span-10 col-start-1 md:col-start-1 xl:col-start-2">
                 <h3 class="title-caption mb-4"><?php the_field( 'teasers_travel_pre-title' ); ?></h3>
                 <h2 class="title-plusred mb-8"><?php the_field( 'teasers_travel_title' ); ?></h2>
-                <p class="text-body font-bold mb-5"><?php the_field( 'teasers_travel_subtitle' ); ?></p>
-                <p class="text-body"><?php the_field( 'teasers_travel_text' ); ?></p>
+                <p class="text-body text-black font-bold mb-5"><?php the_field( 'teasers_travel_subtitle' ); ?></p>
+                <p class="text-body text-black"><?php the_field( 'teasers_travel_text' ); ?></p>
             </div>
         </div>
     </div>
@@ -48,8 +47,8 @@
             <div class="col-span-1 md:col-span-8 xl:col-span-10 col-start-1 md:col-start-1 xl:col-start-2">
                 <h3 class="title-caption mb-4"><?php the_field( 'teasers_wellness_pre-title' ); ?></h3>
                 <h2 class="title-plusblue mb-8"><?php the_field( 'teasers_wellness_title' ); ?></h2>
-                <p class="text-body font-bold mb-5"><?php the_field( 'teasers_wellness_subtitle' ); ?></p>
-                <p class="text-body"><?php the_field( 'teasers_wellness_text' ); ?></p>
+                <p class="text-body text-black font-bold mb-5"><?php the_field( 'teasers_wellness_subtitle' ); ?></p>
+                <p class="text-body text-black"><?php the_field( 'teasers_wellness_text' ); ?></p>
             </div>
         </div>
     </div>

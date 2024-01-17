@@ -2,7 +2,10 @@ h1
     @apply text-5xl
 
 .text-body
-    @apply font-primary_cn text-black text-[1rem] tracking-[-0.015em] leading-[1.7]
+    @apply font-primary_cn text-[1rem] tracking-[-0.015em] leading-[1.7]
+
+.text-body-italic
+    @apply font-primary_light_italic text-[1rem] tracking-[-0.015em] leading-[1.7]
 
 .title
     &-normal
@@ -28,6 +31,8 @@ h1
             content: "\e900"
             font-family: 'icomoon' !important
             @apply text-blue text-4xl leading-10 mr-4 mt-4
+    &-thinner
+        @apply font-primary_light_ultra text-[52px] tracking-[-0.0125em] leading-[56px]
 
 .text-shadow-aris
     text-shadow: -2px 4px 0px rgba(53, 53, 60, 1)

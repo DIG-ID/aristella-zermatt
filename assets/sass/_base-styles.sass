@@ -32,3 +32,25 @@ body
 
 .ar-container
   @apply px-7 md:px-16 xl:px-0 col-span-1 md:col-span-8 xl:col-span-10 xl:col-start-2 grid grid-cols-1 md:grid-cols-8 xl:grid-cols-12
+
+//ornaments
+.ornaments
+  &__title
+    &::before
+      @apply block absolute w-[14px] h-[15px] -left-12 top-1/2 -translate-y-1/2
+      content: ""
+      background-image: url(/wp-content/themes/aristella-zermatt/assets/images/title-ornament.png)
+    &::after
+      @apply block absolute w-[14px] h-[15px] -right-12 top-1/2 -translate-y-1/2
+      content: ""
+      background-image: url(/wp-content/themes/aristella-zermatt/assets/images/title-ornament.png)
+  &__text
+    @apply relative
+    &::before
+      @apply block absolute w-[14px] h-[15px] -left-12 top-1/2 -translate-y-1/2
+      content: ""
+      background-image: url(/wp-content/themes/aristella-zermatt/assets/images/title-ornament.png)
+    &::after
+      @apply block absolute w-[14px] h-[15px] -right-12 top-1/2 -translate-y-1/2
+      content: ""
+      background-image: url(/wp-content/themes/aristella-zermatt/assets/images/title-ornament.png)
