@@ -1,4 +1,4 @@
-<section class="section-history overflow-hidden benis__bg">
+<section class="section-benis overflow-hidden benis__bg">
     <div class="ar-container-grid !gap-y-0">
         <div class="col-span-1 md:col-span-8 xl:col-span-12 pt-28 pb-[330px] text-center">
             <?php 

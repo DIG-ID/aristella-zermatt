@@ -1,7 +1,7 @@
 <section class="section-hosts overflow-hidden">
     <div class="ar-container-grid bg-black">
         <div class="col-span-1 md:col-span-8 xl:col-span-12 py-10 text-center">
-            <img class="inline-block" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/divider-logo-marker.png" alt="divider" title="divider">
+            <img class="inline-block" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/divider-logo-marker.png" alt="divider symbol" title="divider symbol">
         </div>
     </div>
     <div class="ar-container-grid bg-black">
