@@ -2,7 +2,7 @@
 	<div class="ar-container-grid">
         <div class="col-span-1 md:col-span-6 xl:col-span-6 col-start-1 md:col-start-2 xl:col-start-4 text-center">
             <img class="mx-auto" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/lion-ornament.png" alt="ornament" title="ornament">
-            <h1 class="title-normal pb-12 -mt-16"><?php the_field( 'intro_title' ); ?></h1>
+            <h1 class="title-normal text-black uppercase pb-12 -mt-16"><?php the_field( 'intro_title' ); ?></h1>
             <p class="text-body text-black max-w-[744px] mx-auto"><?php the_field( 'intro_text_content' ); ?></p>
             <div class="badges max-w-[240px] mx-auto pt-5">
             <?php

@@ -4,7 +4,7 @@
 			<section class="az-container py-40 !px-16">
 				<div class="az-container-grid">
 					<div class="col-span-7">
-						<h1 class="title-normal text-black mb-12">WILLKOMMEN IN ZERMATT!</h1>
+						<h1 class="title-normal text-black uppercase mb-12">WILLKOMMEN IN ZERMATT!</h1>
 						<h1 class="title-caption text-black mb-12">testing title-caption</h1>
 						<h1 class="title-plusblack mb-12">title plus black</h1>
 						<h1 class="title-plusred mb-12">title plus red</h1>

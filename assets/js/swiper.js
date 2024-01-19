@@ -12,9 +12,19 @@ document.addEventListener("DOMContentLoaded", () => {
 				loop: true,
 				effect: "slide",
     			direction: 'horizontal',
-				fadeEffect: {
-					crossFade: true
+				autoplay: {
+					delay: 4500,
+					disableOnInteraction: false,
 				},
+			});
+			var eventsSwiper = new Swiper(".events-swiper", {
+				lazy: true,
+				slidesPerView: 1,
+				spaceBetween: 0,
+				speed: 1000,
+				loop: true,
+				effect: "slide",
+    			direction: 'horizontal',
 				autoplay: {
 					delay: 4500,
 					disableOnInteraction: false,
