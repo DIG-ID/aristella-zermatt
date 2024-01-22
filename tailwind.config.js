@@ -29,7 +29,8 @@ module.exports = {
         'black': '#45454c',
         'red': '#de3636',
         'beige': '#fff8ec',
-        'blue': '#4983bb'
+        'blue': '#4983bb',
+        'gold': '#c6b29a'
       },
     },
   },
