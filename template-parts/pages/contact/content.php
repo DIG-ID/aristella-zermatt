@@ -1,7 +1,16 @@
 <section id="section-contacts" class="section-content-contact after-triangle">
     <div class="ar-container-grid bg-white !gap-0">
         <div class="col-span-1 md:col-span-8 xl:col-span-6 min-h-[615px]">
-
+            <?php
+			$location = get_field( 'contact_map' );
+			if ( $location ) :
+				?>
+				<div class="acf-map mb-14 md:mb-20 xl:mb-0 max-h-96 md:max-h-none h-[615px]" data-zoom="16">
+					<div class="marker" data-lat="<?php echo esc_attr( $location['lat'] ); ?>" data-lng="<?php echo esc_attr( $location['lng'] ); ?>"></div>
+				</div>
+				<?php
+			endif;
+			?>
         </div>
         <div class="col-span-1 md:col-span-8 xl:col-span-6 pl-10 pr-5 flex flex-col justify-center">
             <h2 class="text-body !text-5xl text-black uppercase mb-5"><?php esc_html_e( 'Kontakt', 'aristella' ) ?></h2>
