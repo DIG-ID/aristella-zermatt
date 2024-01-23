@@ -7,6 +7,7 @@ function aristella_theme_setup() {
 	register_nav_menus(
 		array(
 			'main'                    => __( 'Main Menu', 'aristella' ),
+			'restaurant'                    => __( 'Restaurant Menu', 'aristella' ),
 			'copyright'               => __( 'Copryright Menu', 'aristella' ),
 		)
 	);
