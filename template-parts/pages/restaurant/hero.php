@@ -18,7 +18,7 @@
 			endif;
 			if ( 'video' === get_field( 'hero_media' ) ) :
 				?>
-				<video autoplay loop muted class="section-hero__video" playsinline="playsinline" loop="" autoplay="autoplay" muted="muted">
+				<video autoplay loop muted class="section-hero__video w-full" playsinline="playsinline" loop="" autoplay="autoplay" muted="muted">
 					<?php
 					$video  = get_field( 'hero_video' );
 						echo '<source src="' . esc_url( wp_get_attachment_url( $video ) ) . '">';
