@@ -31,7 +31,7 @@
 						<?php esc_html_e( 'DIREKTBUCHER-VORTEILE', 'aristella' ) ?>
 					</div>
 					<div class="col-span-1 bg-red text-beige font-primary_black text-[1rem] leading-[1rem] tracking-tighter py-4 flex justify-center">
-						<img class="w-4 inline-block mr-2" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/calendar-days.svg" alt="calendar icon" title="calendar icon"></i><span class="text-left inline-block">JETZT<br>BUCHEN</span>
+						<img class="w-4 inline-block mr-2" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/calendar-days.svg" alt="calendar icon" title="calendar icon"><span class="text-left inline-block"><?php esc_html_e( 'JETZT', 'aristella' ); ?><br><?php esc_html_e( 'BUCHEN', 'aristella' ); ?></span>
 					</div>
 				</a>
 			</div>

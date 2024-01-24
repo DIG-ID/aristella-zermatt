@@ -31,11 +31,8 @@
 			</div>
 			<div id="booking-menu" class="w-44 grid-cols-1">
 				<a target="_blank" href="<?php the_field( 'general_simple_booking_url', 'option' ); ?>">
-					<div class="col-span-1 bg-beige text-black font-primary text-xs uppercase text-center p-[6px]">
-						<?php esc_html_e( 'DIREKTBUCHER-VORTEILE', 'aristella' ) ?>
-					</div>
-					<div class="col-span-1 bg-red text-beige font-primary_black text-[1rem] leading-[1rem] tracking-tighter py-4 flex justify-center">
-						<img class="w-4 inline-block mr-2" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/calendar-days.svg" alt="calendar icon" title="calendar icon"></i><span class="text-left inline-block">JETZT<br>BUCHEN</span>
+					<div class="col-span-1 bg-red text-beige font-primary_cn text-[13px] leading-[1.7] tracking-[0.015em] py-[11px] flex flex-col justify-center items-center">
+						<img class="w-4 inline-block mb-2" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/calendar-days.svg" alt="calendar icon" title="calendar icon"><span class="text-center inline-block"><?php esc_html_e( 'TISCH-', 'aristella' ); ?><br><?php esc_html_e( 'RESERVATION', 'aristella' ); ?></span>
 					</div>
 				</a>
 			</div>

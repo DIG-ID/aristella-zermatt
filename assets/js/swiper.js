@@ -16,6 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
 					delay: 4500,
 					disableOnInteraction: false,
 				},
+				navigation: {
+					nextEl: '.swiper-button-next-1',
+					prevEl: '.swiper-button-prev-1',
+				},
 			});
 			var eventsSwiper = new Swiper(".events-swiper", {
 				lazy: true,
@@ -29,7 +33,55 @@ document.addEventListener("DOMContentLoaded", () => {
 					delay: 4500,
 					disableOnInteraction: false,
 				},
+				navigation: {
+					nextEl: '.swiper-button-next-2',
+					prevEl: '.swiper-button-prev-2',
+				},
 			});
+		}
+
+		if (document.body.classList.contains("page-template-page-restaurant")) {
+			var restaurantSwiper1 = new Swiper(".restaurant-swiper1", {
+				lazy: true,
+				slidesPerView: 1,
+				spaceBetween: 0,
+				speed: 1000,
+				loop: true,
+				effect: "slide",
+				direction: 'horizontal',
+				navigation: {
+					nextEl: '.swiper-button-next-1',
+					prevEl: '.swiper-button-prev-1',
+				},
+			});
+			var restaurantSwiper2 = new Swiper(".restaurant-swiper2", {
+				lazy: true,
+				slidesPerView: 1,
+				spaceBetween: 0,
+				speed: 1000,
+				loop: true,
+				effect: "slide",
+				direction: 'horizontal',
+				navigation: {
+					nextEl: '.swiper-button-next-2',
+					prevEl: '.swiper-button-prev-2',
+				},
+			});
+			
+			var restaurantSwiper3 = new Swiper(".restaurant-swiper3", {
+				lazy: true,
+				slidesPerView: 1,
+				spaceBetween: 0,
+				speed: 1000,
+				loop: true,
+				effect: "slide",
+				direction: 'horizontal',
+				navigation: {
+					nextEl: '.swiper-button-next-3',
+					prevEl: '.swiper-button-prev-3',
+				},
+			});
+			
 		}
 
 	}, false);
