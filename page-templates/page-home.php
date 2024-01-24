@@ -18,7 +18,6 @@ if ( have_posts() ) :
 			get_template_part( 'template-parts/pages/home/events' );
 			get_template_part( 'template-parts/pages/home/specials' );
 			get_template_part( 'template-parts/pages/home/restaurant' );
-			get_template_part( 'template-parts/pages/home/devguide' );
 		do_action( 'after_main_content' );
 	endwhile;
 endif;
