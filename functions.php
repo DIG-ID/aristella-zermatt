@@ -7,7 +7,7 @@ function aristella_theme_setup() {
 	register_nav_menus(
 		array(
 			'main'                    => __( 'Main Menu', 'aristella' ),
-			'restaurant'                    => __( 'Restaurant Menu', 'aristella' ),
+			'restaurant'              => __( 'Restaurant Menu', 'aristella' ),
 			'copyright'               => __( 'Copryright Menu', 'aristella' ),
 		)
 	);
@@ -250,7 +250,7 @@ function aristella_theme_enqueue_styles() {
 
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'theme-scripts', get_stylesheet_directory_uri() . '/dist/js/main.js', array( 'jquery' ), $theme_version, false );
-	if ( is_page_template( 'page-templates/page-contact.php' ) || is_admin() ) :
+	if ( is_page_template( 'page-templates/page-contact.php' ) || ( is_singular( 'zimmer' ) && is_single() ) || is_admin() ) :
 		wp_enqueue_script( 'google-map-settings', get_stylesheet_directory_uri() . '/assets/js/google-maps.js', array( 'jquery' ), $theme_version, true );
 		wp_enqueue_script( 'google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCB2RShyxiN7xPsQy1QI_SbqXXjW5p08S0&callback=initMap', array(), $theme_version, true );
 	endif;

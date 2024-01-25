@@ -84,5 +84,30 @@ document.addEventListener("DOMContentLoaded", () => {
 			
 		}
 
+		if (document.body.classList.contains("single-zimmer")) {
+			var roomSwiper = new Swiper(".room-swiper", {
+				lazy: true,
+				slidesPerView: 1,
+				spaceBetween: 0,
+				speed: 1000,
+				loop: true,
+				effect: "slide",
+    			direction: 'horizontal',
+				autoplay: {
+					delay: 4500,
+					disableOnInteraction: false,
+				},
+				thumbs: {
+					swiper: {
+						el: ".room-swiper-thumbnails",
+						spaceBetween: 10,
+						centeredSlides: false,
+						slideToClickedSlide: true,
+						loop: false,
+					},
+				},
+			});
+		}
+
 	}, false);
 });
