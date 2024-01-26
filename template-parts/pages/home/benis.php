@@ -1,15 +1,16 @@
 <section class="section-benis overflow-hidden bg__benis">
+    <?php $home_page = get_page_by_path('homepage'); ?>
     <div class="ar-container-grid !gap-y-0">
         <div class="col-span-1 md:col-span-8 xl:col-span-12 pt-28 pb-[330px] text-center">
             <?php 
-            $benisLogo = get_field('benis_logo');
+            $benisLogo = get_field('benis_logo', $home_page->ID);
             $size = 'full';
             $classes = 'w-56 mb-16 mx-auto';
             if( $benisLogo ) {
                 echo wp_get_attachment_image( $benisLogo, $size, false, array('class' => $classes) );
             } ?>
             <?php 
-            $benisCta = get_field('benis_call_to_action');
+            $benisCta = get_field('benis_call_to_action', $home_page->ID);
             if( $benisCta ): 
                 $benisCta_url = $benisCta['url'];
                 $benisCta_title = $benisCta['title'];
@@ -21,7 +22,7 @@
         <div class="col-span-1 md:col-span-8 xl:col-span-12 grid grid-cols-1 md:grid-cols-5 xl:grid-cols-5 gap-0 pb-[410px]">
             <div class="col-span-1 md:col-span-2 xl:col-span-1 col-start-1 md:col-start-1 xl:col-start-2">
                 <?php
-                $benisImg1 = get_field('benis_image_1');
+                $benisImg1 = get_field('benis_image_1', $home_page->ID);
                 $size = 'full';
                 $classes = 'w-96';
                 if( $benisImg1 ) {
@@ -29,18 +30,18 @@
                 } ?>
             </div>
             <div class="col-span-1 md:col-span-3 xl:col-span-2 col-start-1 md:col-start-1 xl:col-start-3 pl-8">
-                <h2 class="title-plusred mb-7"><?php the_field( 'benis_title_1' ); ?></h2>
-                <p class="text-body text-black"><?php the_field( 'benis_text_1' ); ?></p>
+                <h2 class="title-plusred mb-7"><?php the_field( 'benis_title_1', $home_page->ID ); ?></h2>
+                <p class="text-body text-black"><?php the_field( 'benis_text_1', $home_page->ID ); ?></p>
             </div>
         </div>
         <div class="col-span-1 md:col-span-8 xl:col-span-12 grid grid-cols-1 md:grid-cols-5 xl:grid-cols-5 gap-0  pb-[360px]">
             <div class="col-span-1 md:col-span-3 xl:col-span-2 col-start-1 md:col-start-1 xl:col-start-2 pr-8">
-                <h2 class="title-plusblackbeige mb-7"><?php the_field( 'benis_title_2' ); ?></h2>
-                <p class="text-body text-beige"><?php the_field( 'benis_text_2' ); ?></p>
+                <h2 class="title-plusblackbeige mb-7"><?php the_field( 'benis_title_2', $home_page->ID ); ?></h2>
+                <p class="text-body text-beige"><?php the_field( 'benis_text_2', $home_page->ID ); ?></p>
             </div>
             <div class="col-span-1 md:col-span-2 xl:col-span-1 col-start-1 md:col-start-1 xl:col-start-4">
                 <?php
-                $benisImg2 = get_field('benis_image_2');
+                $benisImg2 = get_field('benis_image_2', $home_page->ID);
                 $size = 'full';
                 $classes = 'w-96';
                 if( $benisImg2 ) {
