@@ -15,7 +15,7 @@
                 $benisCta_title = $benisCta['title'];
                 $benisCta_target = $benisCta['target'] ? $benisCta['target'] : '_self';
                 ?>
-                <a class="btn-normal" href="<?php echo esc_url( $benisCta_url ); ?>" target="<?php echo esc_attr( $benisCta_target ); ?>"><?php echo esc_html( $benisCta_title ); ?></a>
+                <a class="btn-normal uppercase" href="<?php echo esc_url( $benisCta_url ); ?>" target="<?php echo esc_attr( $benisCta_target ); ?>"><?php echo esc_html( $benisCta_title ); ?></a>
             <?php endif; ?>
         </div>
         <div class="col-span-1 md:col-span-8 xl:col-span-12 grid grid-cols-1 md:grid-cols-5 xl:grid-cols-5 gap-0 pb-[410px]">

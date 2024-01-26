@@ -23,7 +23,7 @@
                 $specialCta_title = $specialCta['title'];
                 $specialCta_target = $specialCta['target'] ? $specialCta['target'] : '_self';
                 ?>
-                <a class="btn-normal" href="<?php echo esc_url( $specialCta_url ); ?>" target="<?php echo esc_attr( $specialCta_target ); ?>"><?php echo esc_html( $specialCta_title ); ?></a>
+                <a class="btn-normal uppercase" href="<?php echo esc_url( $specialCta_url ); ?>" target="<?php echo esc_attr( $specialCta_target ); ?>"><?php echo esc_html( $specialCta_title ); ?></a>
             <?php endif; ?>
         </div>
     </div>

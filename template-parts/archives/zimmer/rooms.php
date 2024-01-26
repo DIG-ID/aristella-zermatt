@@ -7,4 +7,24 @@
             <p class="text-body text-black max-w-3xl mx-auto"><?php the_field( 'zimmer_rooms_description', 'option' ); ?></p>
         </div>
     </div>
+    <div class="ar-container-grid">
+        <?php
+        $args = array(
+            'post_type'     => 'zimmer',
+            'order'         => 'DESC',
+            'orderby'       => 'date',
+            'post_status'   => 'publish',
+            'category_name' => 'room',
+        );
+        $query = new WP_Query( $args );
+
+        if ( $query->have_posts() ) :
+            while ( $query->have_posts() ) :
+                $query->the_post();
+                get_template_part( 'template-parts/components/card', 'rooms' );
+            endwhile;
+        endif;
+        wp_reset_postdata();
+        ?>
+    </div>
 </section>

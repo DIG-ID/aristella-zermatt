@@ -18,7 +18,7 @@
                 $transportCta1_title = $transportCta1['title'];
                 $transportCta1_target = $transportCta1['target'] ? $transportCta1['target'] : '_self';
                 ?>
-                <a class="btn-normal mx-auto" href="<?php echo esc_url( $transportCta1_url ); ?>" target="<?php echo esc_attr( $transportCta1_target ); ?>"><?php echo esc_html( $transportCta1_title ); ?></a>
+                <a class="btn-normal uppercase mx-auto" href="<?php echo esc_url( $transportCta1_url ); ?>" target="<?php echo esc_attr( $transportCta1_target ); ?>"><?php echo esc_html( $transportCta1_title ); ?></a>
             <?php endif; ?>
         </div>
     </div>

@@ -10,7 +10,7 @@
                 $parkingCta1_title = $parkingCta1['title'];
                 $parkingCta1_target = $parkingCta1['target'] ? $parkingCta1['target'] : '_self';
                 ?>
-                <a class="btn-normal float-left" href="<?php echo esc_url( $parkingCta1_url ); ?>" target="<?php echo esc_attr( $parkingCta1_target ); ?>"><?php echo esc_html( $parkingCta1_title ); ?></a>
+                <a class="btn-normal uppercase float-left" href="<?php echo esc_url( $parkingCta1_url ); ?>" target="<?php echo esc_attr( $parkingCta1_target ); ?>"><?php echo esc_html( $parkingCta1_title ); ?></a>
             <?php endif; ?>
             <?php 
             $parkingCta2 = get_field('parking_button_1');
@@ -19,7 +19,7 @@
                 $parkingCta2_title = $parkingCta2['title'];
                 $parkingCta2_target = $parkingCta2['target'] ? $parkingCta2['target'] : '_self';
                 ?>
-                <a class="btn-normal float-right" href="<?php echo esc_url( $parkingCta2_url ); ?>" target="<?php echo esc_attr( $parkingCta2_target ); ?>"><?php echo esc_html( $parkingCta2_title ); ?></a>
+                <a class="btn-normal uppercase float-right" href="<?php echo esc_url( $parkingCta2_url ); ?>" target="<?php echo esc_attr( $parkingCta2_target ); ?>"><?php echo esc_html( $parkingCta2_title ); ?></a>
             <?php endif; ?>
         </div>
     </div>

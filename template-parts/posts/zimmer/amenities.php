@@ -1,20 +1,41 @@
-<section id="section-amenities" class="section-amenities after-triangle-dark">
+<section id="section-amenities" class="section-amenities after-triangle">
     <div class="ar-container-grid bg-black py-24">
         <div class="col-span-1 md:col-span-8 xl:col-span-12">
             <?php
             $feature_to_svg = array(
-                'doppelzimmer' => 'doppelzimmer.png',
-                'gratis_wifi' => 'wifi.png',
-                'bergblick' => 'bergblick.png',
-                'balkon' => 'balkon.png',
-                'dusche' => 'dusche.png',
                 'allergikerfreundlich' => 'allergikerfreundlich.png',
+                'badewanne' => 'badewanne.png',
+                'balkon' => 'balkon.png',
+                'bar' => 'bar.png',
+                'bergblick' => 'bergblick.png',
+                'doppelzimmer' => 'doppelzimmer.png',
+                'dusche' => 'dusche.png',
+                'einzelzimmer' => 'einzelzimmer.png',
+                'fahrstuhl' => 'fahrstuhl.png',
+                'ferien' => 'ferien.png',
                 'flatscreen' => 'flatscreen.png',
+                'fussbodenheizung' => 'fussbodenheizung.png',
+                'glutenfree' => 'glutenfree.png',
                 'haartrockner' => 'haartrockner.png',
-                'nichtraucher' => 'niichtraucher.png',
-                'sat-kabel-tv' => 'sat-kabel-TV.png',
-                'telefon' => 'telefon.png',
+                'hundefreundlich' => 'hundefreundlich.png',
                 'kitchen' => 'kitchen.png',
+                'lactosefree' => 'lactosefree.png',
+                'minibar' => 'minibar.png',
+                'nichtraucher' => 'niichtraucher.png',
+                'raucherbereich' => 'raucherbereich.png',
+                'rest' => 'rest.png',
+                'romantik' => 'romantik.png',
+                'sat-kabel-tv' => 'sat-kabel-TV.png',
+                'sauna' => 'sauna.png',
+                'shuttleservice' => 'shuttleservice.png',
+                'skifahren' => 'skifahren.png',
+                'telefon' => 'telefon.png',
+                'velo_gesundheit' => 'velo_gesundheit.png',
+                'waschenservice' => 'waschenservice.png',
+                'gratis_wifi' => 'wifi.png',
+                'wlan_in_zimmer' => 'wlan_in_zimmer.png',
+                'zeitungc' => 'zeitungc.png',
+                'zimmersafe' => 'zimmersafe.png',
             );
             $selected_features = get_field('amenities_amenities_list'); 
             $persons = get_field( 'amenities_number_of_persons' );

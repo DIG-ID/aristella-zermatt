@@ -91,8 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				spaceBetween: 0,
 				speed: 1000,
 				loop: true,
-				effect: "slide",
-    			direction: 'horizontal',
+				effect: "fade",
 				autoplay: {
 					delay: 4500,
 					disableOnInteraction: false,
