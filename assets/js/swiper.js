@@ -108,5 +108,22 @@ document.addEventListener("DOMContentLoaded", () => {
 			});
 		}
 
+		if (document.body.classList.contains("page-template-page-zermatt")) {
+			var activitiesSwiper = new Swiper(".activities-swiper", {
+				lazy: true,
+				slidesPerView: 1.7,
+    			centeredSlides: true,
+				spaceBetween: 100,
+				speed: 1000,
+				loop: true,
+				effect: "slide",
+				direction: 'horizontal',
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		}
+
 	}, false);
 });

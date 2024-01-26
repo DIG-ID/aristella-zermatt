@@ -4,7 +4,30 @@
             <div class="col-span-1 md:col-span-8 xl:col-span-12 text-center">
                 <h2 class="title-normal text-black uppercase"><?php the_field( 'intro_zermatt_title' ); ?></h2>
                 <p class="title-caption text-black"><?php the_field( 'intro_zermatt_subtitle' ); ?></p>
-                <img class="mx-auto my-12" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/title-ornament-dark.png" alt="ornament" title="ornament">
+                <img class="mx-auto mt-12" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/title-ornament-dark.png" alt="ornament" title="ornament">
+            </div>
+        </div>
+        <div class="ar-container-small mb-28">
+            <div class="col-span-1 md:col-span-8 xl:col-span-12 text-center">
+                <div class="swiper activities-swiper">
+				    <div class="swiper-wrapper">
+                        <?php
+                        $args = array(
+                            'post_type'     => 'activity',
+                            'order'         => 'ASC',
+                        );
+                        $query = new WP_Query( $args );
+
+                        if ( $query->have_posts() ) :
+                            while ( $query->have_posts() ) :
+                                $query->the_post();
+                                get_template_part( 'template-parts/components/card', 'activity' );
+                            endwhile;
+                        endif;
+                        wp_reset_postdata();
+                        ?>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-span-1 md:col-span-8 xl:col-span-12">
