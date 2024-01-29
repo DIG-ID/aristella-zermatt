@@ -38,7 +38,7 @@
                 </div>
 
                 <div class="col-span-1 md:col-span-4 xl:col-span-6 features__content<?php echo $plus; ?> pt-12 px-20 <?php echo esc_attr(($order_class === 'order-1') ? 'order-2' : 'order-1'); ?>">
-                    <h2 class="title-normal"><?php the_sub_field( 'title' ); ?></h2>
+                    <h2 class="title-normal uppercase mb-9"><?php the_sub_field( 'title' ); ?></h2>
                     <p class="text-body"><?php the_sub_field( 'text' ); ?></p>
                 </div>
 

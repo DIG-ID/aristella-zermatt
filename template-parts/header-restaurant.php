@@ -29,12 +29,17 @@
 			);
 			?>
 			</div>
-			<div id="booking-menu" class="w-44 grid-cols-1">
-				<a target="_blank" href="<?php the_field( 'general_simple_booking_url', 'option' ); ?>">
-					<div class="col-span-1 bg-red text-beige font-primary_cn text-[13px] leading-[1.7] tracking-[0.015em] py-[11px] flex flex-col justify-center items-center">
-						<img class="w-4 inline-block mb-2" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/calendar-days.svg" alt="calendar icon" title="calendar icon"><span class="text-center inline-block"><?php esc_html_e( 'TISCH-', 'aristella' ); ?><br><?php esc_html_e( 'RESERVATION', 'aristella' ); ?></span>
-					</div>
-				</a>
+			<div class="flex">
+				<div id="booking-menu" class="w-44 grid-cols-1">
+					<a target="_blank" href="<?php the_field( 'general_simple_booking_url', 'option' ); ?>">
+						<div class="col-span-1 bg-red text-beige font-primary_cn text-[13px] leading-[1.7] tracking-[0.015em] py-[11px] flex flex-col justify-center items-center">
+							<img class="w-4 inline-block mb-2" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/calendar-days.svg" alt="calendar icon" title="calendar icon"><span class="text-center inline-block"><?php esc_html_e( 'TISCH-', 'aristella' ); ?><br><?php esc_html_e( 'RESERVATION', 'aristella' ); ?></span>
+						</div>
+					</a>
+				</div>
+				<div class="wpml-megamenu-language-switcher">
+					<?php do_action( 'wpml_add_language_selector' ); ?>
+				</div>
 			</div>
 		</div>
 	</nav>
