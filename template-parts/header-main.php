@@ -25,15 +25,20 @@
 			);
 			?>
 			</div>
-			<div id="booking-menu" class="w-44 grid-cols-1">
-				<a target="_blank" href="<?php the_field( 'general_simple_booking_url', 'option' ); ?>">
-					<div class="col-span-1 bg-beige text-black font-primary text-xs uppercase text-center p-[6px]">
-						<?php esc_html_e( 'DIREKTBUCHER-VORTEILE', 'aristella' ) ?>
-					</div>
-					<div class="col-span-1 bg-red text-beige font-primary_black text-[1rem] leading-[1rem] tracking-tighter py-4 flex justify-center">
-						<img class="w-4 inline-block mr-2" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/calendar-days.svg" alt="calendar icon" title="calendar icon"><span class="text-left inline-block"><?php esc_html_e( 'JETZT', 'aristella' ); ?><br><?php esc_html_e( 'BUCHEN', 'aristella' ); ?></span>
-					</div>
-				</a>
+			<div class="flex">
+				<div id="booking-menu" class="w-44 grid-cols-1">
+					<a target="_blank" href="<?php the_field( 'general_simple_booking_url', 'option' ); ?>">
+						<div class="col-span-1 bg-beige text-black font-primary text-xs uppercase text-center p-[6px]">
+							<?php esc_html_e( 'DIREKTBUCHER-VORTEILE', 'aristella' ) ?>
+						</div>
+						<div class="col-span-1 bg-red text-beige font-primary_black text-[1rem] leading-[1rem] tracking-tighter py-4 flex justify-center">
+							<img class="w-4 inline-block mr-2" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/calendar-days.svg" alt="calendar icon" title="calendar icon"><span class="text-left inline-block"><?php esc_html_e( 'JETZT', 'aristella' ); ?><br><?php esc_html_e( 'BUCHEN', 'aristella' ); ?></span>
+						</div>
+					</a>
+				</div>
+				<div class="wpml-megamenu-language-switcher">
+					<?php do_action( 'wpml_add_language_selector' ); ?>
+				</div>
 			</div>
 		</div>
 	</nav>
