@@ -4,7 +4,9 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "tailwindcss build style.css -o public/style.css",
+    "alpinjs-dev": "npx esbuild index.js --outfile=dist/bundle.js --bundle"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +24,8 @@
     "@fancyapps/fancybox": "^3.5.7",
     "@fancyapps/ui": "^5.0.24",
     "@studio-freight/lenis": "^1.0.22",
+    "alpinejs": "^3.13.5",
+    "esbuild": "^0.20.0",
     "gsap": "^3.12.2",
     "imagesloaded": "^5.0.0",
     "swiper": "^10.2.0"

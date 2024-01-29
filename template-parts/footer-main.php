@@ -1,4 +1,4 @@
-<footer class="footer-main border-t pt-14 pb-9 bg-black text-beige">
+<footer class="footer-main border-t pt-14 bg-black text-beige">
     <div class="ar-container-grid">
         <div class="ar-container-small">
             <div class="col-span-12">
@@ -55,4 +55,25 @@
             </div>
         </div>
     </div>
+    <div class="ar-container-grid border-t border-t-[#1e1e1e] py-6">
+		<div class="col-span-1 md:col-span-8 xl:col-span-8 xl:col-start-3 flex flex-col xl:flex-row justify-center xl:justify-between items-center">
+			<div class="copy-info flex flex-col xl:flex-row">
+                <p class="font-primary_cn text-[13px] tracking-[-0.015em] leading-[1.7] text-[#a0a0a0]"><?php the_field( 'contacts_address', 'option' ); ?></p>
+			</div>
+			<div class="copy-menu">
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'copyright',
+						'container'      => false,
+						'menu_class'     => 'copy-menu-nav',
+						'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+						'fallback_cb'    => '__return_false',
+					)
+				);
+				?>
+			</div>
+		</div>
+
+	</div>
 </footer>
