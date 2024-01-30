@@ -1,4 +1,4 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'card-event col-span-1 md:col-span-4 xl:col-span-4' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'card-event col-span-1 md:col-span-4 xl:col-span-4 px-8 lg:px-0' ); ?>>
     <figure class="w-full">
         <?php the_post_thumbnail( 'full', array( 'class' => 'object-cover w-full' ) ); ?>
     </figure>

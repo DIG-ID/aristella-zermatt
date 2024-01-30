@@ -14,7 +14,7 @@
             <?php endif; ?>
         </div>
         <div class="col-span-1 md:col-span-5 xl:col-span-3 flex flex-col justify-between">
-            <h2 class="title-normal !text-[42px] text-black"><?php the_title(); ?></h2>
+            <h2 class="title-normal py-4 lg:py-0 !text-[42px] text-black"><?php the_title(); ?></h2>
             <div class="text-body-light specials-text-div"><?php the_field( 'text_content' ); ?></div>
             <?php 
             $specialCta = get_field('cta_button');

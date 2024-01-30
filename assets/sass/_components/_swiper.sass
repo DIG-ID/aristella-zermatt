@@ -4,9 +4,9 @@
 
 .section-hero
     .swiper-button-next
-        @apply right-[10%] z-50
+        @apply right-[10%] z-30
     .swiper-button-prev
-        @apply left-[10%] z-50
+        @apply left-[10%] z-30
 
 .room-swiper-thumbnails
     .swiper-wrapper
@@ -14,3 +14,8 @@
         .swiper-slide
             max-width: 55px
             cursor: pointer
+
+@media (max-width: 1280px)
+    .home .section-hero
+        .swiper-button-next, .swiper-button-prev
+            @apply hidden

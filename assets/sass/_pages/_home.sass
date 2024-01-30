@@ -1,7 +1,7 @@
 
 .bg
     &__benis
-        @apply bg-cover
+        @apply bg-auto lg:bg-cover
         background-image: url(/wp-content/themes/aristella-zermatt/assets/images/benis-bg.jpg)
         background-position: center 0px
         background-repeat: no-repeat
@@ -13,3 +13,8 @@
 
 .specials-text-div > p
     margin-bottom: 20px
+
+@media (max-width: 1280px)
+    .bg
+        &__restaurant
+            background-image: none

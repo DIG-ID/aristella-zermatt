@@ -22,3 +22,53 @@ nav
         @apply h-full
         ul
             @apply h-full flex flex-col justify-evenly
+
+//mobile menu
+.mobile-menu-toggle
+    display: none
+
+.mobile-menu
+    display: none
+    opacity: 0
+    transition: opacity 0.3s ease-in-out
+
+.mobile-menu.active
+    display: block
+    height: calc(100vh - 115px)
+    overflow-y: auto
+
+@media (max-width: 1280px)
+    .mobile-menu-toggle
+        display: block
+    .main-menu, .booking-menu-wrapper
+        display: none
+    
+    .mobile-menu
+        @apply bg-black relative
+        .main-menu-responsive
+            @apply flex flex-col justify-center items-start pt-10
+        &.active
+            @apply z-[99]
+
+    .main-menu-responsive
+        @apply p-4
+        li
+            @apply mb-4
+            a
+                @apply font-primary_bold_cn text-beige text-[28px]
+                letter-spacing: 0.001em
+
+    .wpml
+        &-ls-link
+            @apply font-primary_bold_cn text-[28px] tracking-[-0.015em] leading-[1.7] text-beige
+            padding-right: 16px !important
+            padding-left: 16px !important
+            span
+                @apply border-0 pb-1
+            &:hover
+                span
+                    @apply border-0
+        &-ls-legacy-list-vertical
+            @apply h-full
+            ul
+                @apply h-full flex flex-row justify-evenly

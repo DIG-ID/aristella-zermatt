@@ -1,4 +1,4 @@
-<section id="section-intro" class="section-intro xl:pt-24 xl:pb-40 overflow-hidden">
+<section id="section-intro" class="section-intro px-4 lg:px-0 pt-12 xl:pt-24 pb-8 xl:pb-40 overflow-hidden">
 	<div class="ar-container-grid">
         <div class="col-span-1 md:col-span-6 xl:col-span-6 col-start-1 md:col-start-2 xl:col-start-4 text-center">
             <img class="mx-auto" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/lion-ornament.png" alt="ornament" title="ornament">
