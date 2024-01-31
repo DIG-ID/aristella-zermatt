@@ -10,7 +10,7 @@
 					$link_title = $link['title'];
 					$link_target = $link['target'] ? $link['target'] : '_self';
 					?>
-					<a class="btn-small inline-block" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+					<a class="btn-small inline-block !leading-[18px] !py-4" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?><img class="w-[18px] ml-4 float-right" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/arrow-right-long.svg"></a>
 				<?php endif; ?>
 			</div>
 			<div class="hero__content absolute w-full z-30 left-1/2 -translate-x-1/2 bottom-0 text-center max-h-24 hidden xl:block">

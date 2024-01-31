@@ -1,4 +1,4 @@
-<section id="section-intro" class="section-intro bg-beige overflow-hidden">
+<section id="section-wellness" class="section-wellness bg-beige overflow-hidden">
 	<div class="ar-container-grid !gap-0">
         <?php
         if( have_rows('wellness_list') ):
