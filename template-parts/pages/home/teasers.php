@@ -16,14 +16,15 @@
             </div>
         </div>
     </div>
-
-    <?php 
-    $travelImg = get_field('teasers_travel_image');
-    $size = 'full';
-    $classes = 'w-full';
-    if( $travelImg ) {
-        echo wp_get_attachment_image( $travelImg, $size, false, array('class' => $classes) );
-    } ?>
+    <div class="breaker-mask-2 w-full">
+        <?php 
+        $travelImg = get_field('teasers_travel_image');
+        $size = 'full';
+        $classes = 'w-full';
+        if( $travelImg ) {
+            echo wp_get_attachment_image( $travelImg, $size, false, array('class' => $classes) );
+        } ?>
+    </div>
     <div class="ar-container-grid bg-white pt-14 pb-28">
         <div class="ar-container ar-padding">
             <div class="col-span-1 md:col-span-8 xl:col-span-10 col-start-1 md:col-start-1 xl:col-start-2">
@@ -35,13 +36,15 @@
         </div>
     </div>
 
-    <?php 
-    $wellnessImg = get_field('teasers_wellness_image');
-    $size = 'full';
-    $classes = 'w-full';
-    if( $wellnessImg ) {
-        echo wp_get_attachment_image( $wellnessImg, $size, false, array('class' => $classes) );
-    } ?>
+    <div class="breaker-mask-3 w-full">
+        <?php 
+        $wellnessImg = get_field('teasers_wellness_image');
+        $size = 'full';
+        $classes = 'w-full';
+        if( $wellnessImg ) {
+            echo wp_get_attachment_image( $wellnessImg, $size, false, array('class' => $classes) );
+        } ?>
+    </div>
     <div class="ar-container-grid bg-white pt-14 pb-28">
         <div class="ar-container ar-padding">
             <div class="col-span-1 md:col-span-8 xl:col-span-10 col-start-1 md:col-start-1 xl:col-start-2">

@@ -7,6 +7,7 @@
     <div class="ar-container-grid bg-black">
         <div class="col-span-1 md:col-span-8 xl:col-span-12 relative">
             <h2 class="title-thinner text-white absolute top-20 left-1/2 -translate-x-1/2 z-30 ornaments__title"><?php the_field( 'hosts_title' ); ?></h2>
+            <div class="breaker-mask-4">
             <?php 
             $hostsImg = get_field('hosts_image');
             $size = 'full';
@@ -14,6 +15,7 @@
             if( $hostsImg ) {
                 echo wp_get_attachment_image( $hostsImg, $size, false, array('class' => $classes) );
             } ?>
+            </div>
         </div>
     </div>
     <div class="ar-container-grid bg-black py-14">
