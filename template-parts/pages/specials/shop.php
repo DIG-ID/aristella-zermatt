@@ -1,7 +1,7 @@
 <section class="section-shop overflow-hidden bg-beige py-[100px]">
     <?php $specials_page = get_page_by_path('specials'); ?>
     <div class="ar-container-grid mb-20">
-        <div class="col-span-1 md:col-span-8 xl:col-span-12 text-center">
+        <div class="col-span-1 md:col-span-8 xl:col-span-12 text-center px-7 lg:px-0">
             <h2 class="title-normal text-black uppercase mb-3"><?php the_field( 'shop_title', $specials_page->ID ); ?></h2>
             <p class="text-body text-black"><?php the_field( 'shop_subtitle', $specials_page->ID ); ?></p>
         </div>
@@ -11,7 +11,7 @@
             <?php
             if( have_rows('shop_list', $specials_page->ID) ):
             while( have_rows('shop_list', $specials_page->ID) ) : the_row(); ?>
-                <div class="col-span-1 flex flex-col items-center">
+                <div class="col-span-1 flex flex-col items-center mb-16 lg:mb-0">
                     <?php 
                     $iconImg = get_sub_field('icon');
                     $size = 'full';

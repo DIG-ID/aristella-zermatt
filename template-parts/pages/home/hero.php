@@ -1,7 +1,7 @@
 <section class="section-hero mt-16 xl:mt-[92px] overflow-hidden max-h-[78vh] relative">
 	<div class="ar-container-grid">
 		<div class="col-span-1 md:col-span-8 xl:col-span-12">
-			<div class="hero__content absolute w-full z-30 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 text-center">
+			<div class="hero__content absolute w-full z-30 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 text-center px-8">
 				<h2 class="font-primary_bold uppercase text-beige text-[28px] sm:text-[28px] lg:text-[56px] text-shadow-aris mb-5"><?php the_field( 'hero_title' ); ?></h2>
 				<?php 
 				$link = get_field('hero_button_link');

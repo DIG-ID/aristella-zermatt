@@ -1,5 +1,5 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'card-rooms col-span-1 md:col-span-8 xl:col-span-12 ar-container-grid !gap-0' ); ?>>
-    <div class="col-span-1 md:col-span-4 xl:col-span-6">
+    <div class="col-span-1 md:col-span-8 xl:col-span-6">
         <?php 
         $roomImg = get_field( 'hero_image' );
         $size = 'large';
@@ -8,7 +8,7 @@
             echo wp_get_attachment_image( $roomImg, $size, false, array('class' => $classes) );
         } ?>
     </div>
-    <div class="col-span-1 md:col-span-4 xl:col-span-6 px-7 pt-16 bg-white">
+    <div class="col-span-1 md:col-span-8 xl:col-span-6 px-7 pt-16 pb-7 bg-white">
         <h3 class="title-normal text-black uppercase mb-8"><?php the_title(); ?></h3>
         <?php
             $feature_to_svg = array(

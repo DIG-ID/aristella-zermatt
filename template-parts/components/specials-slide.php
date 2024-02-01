@@ -1,6 +1,6 @@
 <article data-swiper-autoplay="2000" id="post-<?php the_ID(); ?>" <?php post_class( 'swiper-slide bg-beige p-10' ); ?>>
     <div class="ar-container-grid">
-        <div class="col-span-1 md:col-span-7 xl:col-span-9">
+        <div class="col-span-1 md:col-span-8 xl:col-span-8 2xl:col-span-9">
             <?php if (has_post_thumbnail()) : 
                 $full_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
             ?>
@@ -13,7 +13,7 @@
                 </div>
             <?php endif; ?>
         </div>
-        <div class="col-span-1 md:col-span-5 xl:col-span-3 flex flex-col justify-between">
+        <div class="col-span-1 md:col-span-8 xl:col-span-8 2xl:col-span-3 flex flex-col justify-between">
             <h2 class="title-normal py-4 lg:py-0 !text-[42px] text-black"><?php the_title(); ?></h2>
             <div class="text-body-light specials-text-div"><?php the_field( 'text_content' ); ?></div>
             <?php 

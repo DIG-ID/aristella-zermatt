@@ -1,5 +1,5 @@
 <section class="section-voucher bg-black py-6 z-30 relative">
-	<div class="grid grid-cols-1 md:grid-cols-5 xl:grid-cols-5 items-start">
+	<div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-5 items-start">
 		<div class="col-span-1 hidden lg:flex justify-center mb-10 lg:mb-0">
 			<!-- TrustYou Widget -->
 			<iframe src="https://api.trustyou.com/hotels/0c0da902-e28d-4826-b674-679d075a59b7/seal.html?key=645d3a3a-45b8-4316-93c1-cf42411a5470&amp;size=l&amp;scale=5" width="125px" height="101px" frameborder="0" scrolling="no"></iframe>
