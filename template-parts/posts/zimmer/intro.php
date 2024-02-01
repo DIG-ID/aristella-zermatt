@@ -1,4 +1,4 @@
-<section id="section-intro" class="section-intro after-triangle">
+<section id="section-intro" class="section-intro after-triangle px-7 lg:px-0">
     <div class="ar-container-grid">
         <div class="col-span-1 md:col-span-8 xl:col-span-12 bg-beige pt-24 pb-10 text-center">
             <h2 class="title-normal !text-[32px] !tracking-[2px] text-black uppercase mb-9"><?php the_title(); ?></h2>
