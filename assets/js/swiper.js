@@ -111,7 +111,15 @@ document.addEventListener("DOMContentLoaded", () => {
 		if (document.body.classList.contains("page-template-page-zermatt")) {
 			var activitiesSwiper = new Swiper(".activities-swiper", {
 				lazy: true,
-				slidesPerView: 1.7,
+				slidesPerView: 1,
+				breakpoints: {
+					768: {
+						slidesPerView: 1.7,
+					},
+					1024: {
+						slidesPerView: 1.7,
+					},
+				},
     			centeredSlides: true,
 				spaceBetween: 100,
 				speed: 1000,

@@ -7,8 +7,8 @@
                 <img class="mx-auto mt-12" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/title-ornament-dark.png" alt="ornament" title="ornament">
             </div>
         </div>
-        <div class="ar-container-small mb-28">
-            <div class="col-span-1 md:col-span-8 xl:col-span-12 text-center">
+        <div class="ar-container-small mb-8 lg:mb-28">
+            <div class="col-span-1 md:col-span-8 xl:col-span-12">
                 <div class="swiper activities-swiper">
 				    <div class="swiper-wrapper">
                         <?php
@@ -27,6 +27,8 @@
                         wp_reset_postdata();
                         ?>
                     </div>
+                    <div class="swiper-button-next swiper-button-next-activity"></div>
+                    <div class="swiper-button-prev swiper-button-prev-activity"></div>
                 </div>
             </div>
         </div>
@@ -40,7 +42,7 @@
             } ?>
         </div>
     </div>
-    <div class="ar-container-grid !gap-0 bg-white pt-28 pb-40">
+    <div class="ar-container-grid !gap-0 bg-white px-7 lg:px-0 pt-9 lg:pt-28 pb-10 lg:pb-40">
         <div class="ar-container">
             <div class="col-span-1 md:col-span-8 xl:col-span-12 text-center">
                 <h2 class="title-normal relative inline-block ornaments__title-dark text-black uppercase mb-10"><?php the_field( 'intro_history_title' ); ?></h2>
