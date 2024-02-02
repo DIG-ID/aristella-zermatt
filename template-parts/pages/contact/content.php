@@ -1,6 +1,6 @@
 <section id="section-contacts" class="section-content-contact after-triangle">
     <div class="ar-container-grid bg-white !gap-0">
-        <div class="col-span-1 md:col-span-8 xl:col-span-6 min-h-[615px]">
+        <div class="col-span-1 md:col-span-8 xl:col-span-6 lg:min-h-[615px]">
             <?php
 			$location = get_field( 'contact_map' );
 			if ( $location ) :
@@ -12,7 +12,7 @@
 			endif;
 			?>
         </div>
-        <div class="col-span-1 md:col-span-8 xl:col-span-6 pl-10 pr-5 flex flex-col justify-center">
+        <div class="col-span-1 md:col-span-8 xl:col-span-6 px-7 lg:pl-10 lg:pr-5 pb-9 lg:pb-0 flex flex-col justify-center">
             <h2 class="text-body !text-5xl text-black uppercase mb-5"><?php esc_html_e( 'Kontakt', 'aristella' ) ?></h2>
             <p class="text-body text-black uppercase"><?php esc_html_e( 'Adresse', 'aristella' ) ?></p>
             <p class="text-body text-black font-bold mb-5 uppercase"><?php the_field( 'contacts_address', 'option' ); ?></p>
@@ -24,5 +24,5 @@
             <p class="text-body text-black font-bold"><?php the_field( 'contacts_fax', 'option' ); ?></p>
         </div>
     </div>
-    <div class="w-full h-36 bg-beige"></div>
+    <div class="w-full h-20 lg:h-36 bg-beige"></div>
 </section>

@@ -5,12 +5,12 @@
                 <?php 
                 $badgeImg = get_field('badge_logo');
                 $size = 'full';
-                $classes = 'w-[220px] mx-auto';
+                $classes = 'max-h-[120px] md:max-h-none w-auto max-w-[160px] md:max-w-none md:w-[220px] mx-auto';
                 if( $badgeImg ) {
                     echo wp_get_attachment_image( $badgeImg, $size, false, array('class' => $classes) );
                 } ?>
 			</div>
-            <div class="hero__content absolute w-full z-30 left-1/2 -translate-x-1/2 bottom-0 text-center max-h-24">
+            <div class="hero__content absolute w-full z-30 left-1/2 -translate-x-1/2 bottom-0 text-center max-h-24 hidden xl:block">
                 <a href="#section-contacts" class="inline-block w-[30px] md:w-[60px]">
                     <svg class="arrowsScroll animatedArrow"><path class="a1" d="M0 0 L30 32 L60 0"></path></svg>
                 </a>

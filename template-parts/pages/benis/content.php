@@ -1,5 +1,5 @@
-<section id="section-intro" class="section-intro py-[100px] overflow-hidden">
-	<div class="ar-container-grid">
+<section id="section-intro" class="section-intro py-12 lg:py-[100px] overflow-hidden">
+	<div class="ar-container-grid px-7 lg:px-0">
         <div class="col-span-1 md:col-span-6 xl:col-span-6 col-start-1 md:col-start-2 xl:col-start-4 text-center">
             <img class="mx-auto mb-12" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/title-ornament-dark.png" alt="ornament" title="ornament">
             <p class="text-body text-black max-w-[744px] mx-auto"><?php the_field( 'intro_text' ); ?></p>
@@ -8,11 +8,11 @@
 </section>
 
 <section id="section-tips" class="section-tips bg-white overflow-hidden">
-    <div class="ar-container-grid !gap-0">
+    <div class="ar-container-grid !gap-0 px-7 xl:px-0">
         <?php
         if( have_rows('tips') ):
         while( have_rows('tips') ) : the_row(); ?>
-            <div class="ar-container-small md:gap-x-4 xl:gap-x-9 pt-12 pb-12">
+            <div class="ar-container-small md:gap-x-4 xl:gap-x-9 pt-0 lg:pt-12 pb-0 lg:pb-12">
                 <div class="col-span-1 md:col-span-2 xl:col-span-4 pt-8 pb-8">
                     <?php 
                     $tipsImg = get_sub_field('image');

@@ -1,4 +1,4 @@
-<section class="section-features overflow-hidden relative bg-red py-[100px]">
+<section class="section-features overflow-hidden relative bg-red py-20 lg:py-[100px] px-7 lg:px-0">
     <div class="ar-container-grid !gap-y-16">
         <div class="ar-container-small">
             <div class="col-span-1 md:col-span-8 xl:col-span-12 relative">
@@ -8,7 +8,7 @@
                 $url = wp_get_attachment_url( $file ); ?>
                 <a href="<?php echo esc_html($url); ?>" target="_blank" class="block absolute left-0 top-0 w-full h-full">
                     <div class="flex flex-col justify-center items-center h-full">
-                        <p class="title-normal text-red uppercase"><?php the_field( 'menus_bar_menu_title' ); ?></p>
+                        <p class="title-normal text-black lg:text-red uppercase"><?php the_field( 'menus_bar_menu_title' ); ?></p>
                         <p><i class="icomoon-square-black"></i></p>
                     </div>
                 </a>
@@ -16,7 +16,7 @@
                 <?php 
                 $barmenuImg = get_field('menus_bar_menu_background');
                 $size = 'full';
-                $classes = 'w-full';
+                $classes = 'w-full hidden lg:block';
                 if( $barmenuImg ) {
                     echo wp_get_attachment_image( $barmenuImg, $size, false, array('class' => $classes) );
                 } ?>

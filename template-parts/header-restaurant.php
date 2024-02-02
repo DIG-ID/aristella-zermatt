@@ -1,5 +1,5 @@
 <header id="header-main" class="header-main header-restaurant w-full fixed top-0 z-40 bg-white" itemscope itemtype="http://schema.org/WebSite">
-	<nav class="navigation-main bg-black w-full flex items-center py-0 xl:py-0" role="navigation" aria-label="<?php esc_attr_e( 'main navigation', 'aristella' ); ?>">
+	<nav class="navigation-main bg-black w-full flex items-center py-0 xl:py-0 min-h-[92px]" role="navigation" aria-label="<?php esc_attr_e( 'main navigation', 'aristella' ); ?>">
 		<div class="menu relative w-full max-w-[1320px] mx-auto items-center justify-evenly">
 			<div class="site-branding">
 				<?php
@@ -29,7 +29,7 @@
 			);
 			?>
 			</div>
-			<div class="flex">
+			<div class="reservation-menu-wrapper flex">
 				<div id="booking-menu" class="w-44 grid-cols-1">
 					<a target="_blank" href="<?php the_field( 'general_simple_booking_url', 'option' ); ?>">
 						<div class="col-span-1 bg-red text-beige font-primary_cn text-[13px] leading-[1.7] tracking-[0.015em] py-[11px] flex flex-col justify-center items-center">
@@ -41,6 +41,25 @@
 					<?php do_action( 'wpml_add_language_selector' ); ?>
 				</div>
 			</div>
+			<button id="mobile-menu-toggle" class="mobile-menu-toggle absolute right-4">
+				<span class="menu-icon"><img id="menu-icon-img" src="/wp-content/themes/aristella-zermatt/assets/images/burger-menu.svg" title="mobile menu" alt="mobile menu"></span>
+			</button>
 		</div>
 	</nav>
+	<div class="mobile-menu">
+		<?php
+		wp_nav_menu(
+			array(
+				'theme_location' => 'restaurant',
+				'container'      => false,
+				'menu_class'     => 'main-menu-responsive block text-responsive-menu uppercase', // Adjust classes here
+				'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+				'fallback_cb'    => '__return_false',
+			)
+		);
+		?>
+		<div class="wpml-language-switcher wpml-language-switcher-normal xl:hidden">
+			<?php do_action( 'wpml_add_language_selector' ); ?>
+		</div>
+	</div>
 </header>

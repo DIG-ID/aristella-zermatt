@@ -1,11 +1,11 @@
 <section id="section-transport" class="section-transport overflow-hidden">
-	<div class="ar-container-grid xl:pt-24 xl:pb-24">
-        <div class="col-span-1 md:col-span-6 xl:col-span-4 col-start-1 md:col-start-2 xl:col-start-5 text-center">
-            <div class="grid grid-cols-2 md:grid-cols-9">
-                <div class="col-span-1 md:col-span-1 col-start-1 md:col-start-4">
+	<div class="ar-container-grid px-7 lg:px-0 pt-9 pb-12 lg:pt-24 lg:pb-24">
+        <div class="col-span-1 md:col-span-4 xl:col-span-4 col-start-1 md:col-start-3 xl:col-start-5 text-center">
+            <div class="grid grid-cols-1 md:grid-cols-9">
+                <div class="col-span-1 md:col-span-1 col-start-1 md:col-start-4 block">
                     <img class="mx-auto" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/transport.png" alt="transport" title="transport">
                 </div>
-                <div class="col-span-1 md:col-span-3 col-start-1 md:col-start-5">
+                <div class="col-span-1 md:col-span-4 xl:col-span-3 col-start-1 md:col-start-4 xl:col-start-5 flex flex-col items-center md:block">
                     <h3 class="text-body text-red !text-3xl text-left"><?php the_field( 'transport_title' ); ?></h3>
                     <p class="text-body text-black text-left lg:max-w-[180px]"><?php the_field( 'transport_subtitle' ); ?></p>
                 </div>

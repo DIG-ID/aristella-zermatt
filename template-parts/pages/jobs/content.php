@@ -1,5 +1,5 @@
-<section id="section-content" class="section-content bg-white overflow-hidden pt-16 pb-10">
-    <div class="ar-container-grid">
+<section id="section-content" class="section-content bg-white overflow-hidden pt-16 pb-0 lg:pb-10">
+    <div class="ar-container-grid px-7 lg:px-0">
         <div class="ar-container-small">
             <div class="col-span-1 md:col-span-8 xl:col-span-12 pt-28 text-center">
                 <img class="mx-auto mb-7" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/title-ornament-dark.png" alt="ornament" title="ornament">
@@ -7,7 +7,7 @@
             </div>
         </div>
     </div>
-    <div class="ar-container-grid !gap-0">
+    <div class="ar-container-grid !gap-0 px-7 lg:px-0">
         <div class="ar-container-small md:gap-x-4 xl:gap-x-9 pb-12">
             <div class="col-span-1 md:col-span-8 xl:col-span-12 pt-28 pb-12">
                 <?php 
@@ -84,10 +84,10 @@
     </div>
 </section>
 
-<section id="section-content-2" class="section-content-2 bg-beige overflow-hidden pt-16 pb-10">
-    <div class="ar-container-grid !gap-0">
+<section id="section-content-2" class="section-content-2 bg-beige overflow-hidden pt-16 pb-0 lg:pb-10">
+    <div class="ar-container-grid !gap-0 px-7 lg:px-0">
         <div class="ar-container-small md:gap-x-4 xl:gap-x-9 pb-12">
-            <div class="col-span-1 md:col-span-8 xl:col-span-12 pt-28 pb-12">
+            <div class="col-span-1 md:col-span-8 xl:col-span-12 pt-0 lg:pt-28 pb-12">
                 <?php 
                 $alt_logo = get_field( 'general_restaurant_logo','option' );
                 $size = 'full';

@@ -1,6 +1,6 @@
 <section id="section-intro" class="section-intro">
     <div class="ar-container-grid">
-        <div class="col-span-1 md:col-span-8 xl:col-span-12 bg-beige pt-24 pb-20 text-center">
+        <div class="col-span-1 md:col-span-8 xl:col-span-12 bg-beige px-7 lg:px-0 pt-24 pb-20 text-center">
             <?php 
             $logoImg = get_field('intro_logo');
             $size = 'full';
