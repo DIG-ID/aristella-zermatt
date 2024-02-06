@@ -6,10 +6,10 @@
             while( have_rows('features_list') ) : the_row(); ?>
             <div class="ar-container-grid !gap-0">
                 <?php
-                $order_class = ($iteration % 2 === 0) ? 'lg:order-2' : 'lg:order-1';
+                $order_class = ($iteration % 2 === 0) ? 'xl:order-2' : 'xl:order-1';
                 ?>
 
-                <div class="px-7 lg:px-0 pb-7 lg:pb-0 pt-7 lg:pt-0 col-span-1 md:col-span-4 xl:col-span-6 <?php echo esc_attr($order_class); ?>">
+                <div class="px-7 lg:px-0 pb-7 lg:pb-0 pt-7 lg:pt-0 col-span-1 md:col-span-8 xl:col-span-6 <?php echo esc_attr($order_class); ?>">
                     <?php
                     $slider = get_sub_field( 'images' );
                     if ( $slider ) :
@@ -36,7 +36,7 @@
                     ?>
                 </div>
 
-                <div class="col-span-1 md:col-span-4 xl:col-span-6 features__content<?php echo $plus; ?> pt-12 pb-7 lg:pb-0 px-7 lg:px-20 <?php echo esc_attr(($order_class === 'lg:order-1') ? 'lg:order-2' : 'lg:order-1'); ?>">
+                <div class="col-span-1 md:col-span-8 xl:col-span-6 features__content<?php echo $plus; ?> pt-12 pb-7 lg:pb-0 px-7 lg:px-20 <?php echo esc_attr(($order_class === 'xl:order-1') ? 'xl:order-2' : 'xl:order-1'); ?>">
                     <h2 class="title-normal uppercase mb-9"><?php the_sub_field( 'title' ); ?></h2>
                     <p class="text-body"><?php the_sub_field( 'text' ); ?></p>
                 </div>

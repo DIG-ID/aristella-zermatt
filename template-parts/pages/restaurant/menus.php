@@ -1,7 +1,7 @@
 <section class="section-features overflow-hidden relative bg-red py-20 lg:py-[100px] px-7 lg:px-0">
     <div class="ar-container-grid !gap-y-16">
         <div class="ar-container-small">
-            <div class="col-span-1 md:col-span-8 xl:col-span-12 relative">
+            <div class="col-span-1 md:col-span-8 xl:col-span-12 relative my-10 lg:mb-0">
                 <?php
                 $file = get_field('menus_bar_menu');
                 if( $file ):
@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="ar-container-small gap-x-16">
-            <div class="col-span-1 md:col-span-4 xl:col-span-6 relative">
+            <div class="col-span-1 md:col-span-4 xl:col-span-6 relative mb-16 lg:mb-0">
                 <?php
                 $file = get_field('menus_menu');
                 if( $file ):
