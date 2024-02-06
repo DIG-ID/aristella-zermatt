@@ -1,7 +1,7 @@
 <footer class="footer-main border-t pt-14 bg-black text-beige px-8 lg:px-0 text-center lg:text-left">
     <div class="ar-container-grid">
         <div class="ar-container-small">
-            <div class="col-span-1 md:col-span-8 xl:col-span-12 flex lg:block justify-center lg:justify-normal order-1">
+            <div class="col-span-1 md:col-span-8 xl:col-span-12 flex xl:block justify-center xl:justify-normal order-1">
                 <?php
                 $footer_logo = get_field( 'general_footer_logo','option' );
                 if( $footer_logo ) :
@@ -9,10 +9,10 @@
                 endif;
                 ?>
             </div>
-            <div class="col-span-1 md:col-span-4 xl:col-span-8 order-2">
+            <div class="col-span-1 md:col-span-8 xl:col-span-8 order-2">
                 <p class="text-body text-[#a0a0a0] uppercase py-5"><?php esc_html_e( 'ARISTELLA SWISSFLAIR HOTEL & APARTEMENT', 'aristella' ) ?><br><?php esc_html_e( 'RESTAURANT SPYCHER', 'aristella' ) ?></p>
             </div>
-            <div class="col-span-1 md:col-span-4 xl:col-span-4 text-center lg:text-right pt-11 lg:pr-12 mb-8 lg:mb-0 order-4 lg:order-3">
+            <div class="col-span-1 md:col-span-8 xl:col-span-4 text-center lg:text-right pt-11 lg:pr-12 mb-8 lg:mb-0 order-4 lg:order-3">
                 <a href="<?php get_field( 'general_socials_facebook_url', 'option' ) ?>" class="inline-block mr-1">
                     <?php 
                     $fbImg = get_field( 'general_socials_facebook_icon', 'option' );
@@ -41,13 +41,13 @@
                     } ?>
                 </a>
             </div>
-            <div class="col-span-1 md:col-span-4 xl:col-span-8 order-3 lg:order-4">
+            <div class="col-span-1 md:col-span-8 xl:col-span-8 order-3 lg:order-4">
                 <?php
                 $newsletter_form = get_field( 'general_newsletter_form_shortcode', 'option' );
                 echo do_shortcode( $newsletter_form );
                 ?>
             </div>
-            <div class="col-span-1 md:col-span-4 xl:col-span-4 order-5 flex justify-center lg:block pb-14 lg:pb-0">
+            <div class="col-span-1 md:col-span-8 xl:col-span-4 order-5 flex justify-center lg:block pb-14 lg:pb-0">
                 <!-- TrustYou Widget -->
                 <iframe class="float-right" src="https://api.trustyou.com/hotels/0c0da902-e28d-4826-b674-679d075a59b7/seal.html?key=645d3a3a-45b8-4316-93c1-cf42411a5470&amp;size=l&amp;scale=5" width="125px" height="101px" frameborder="0" scrolling="no"></iframe>
                 <!-- /TrustYou Widget -->
