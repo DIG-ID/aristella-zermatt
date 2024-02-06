@@ -11,7 +11,7 @@
                 } ?>
 			</div>
             <div class="hero__content absolute w-full z-30 left-1/2 -translate-x-1/2 bottom-0 text-center max-h-24 hidden xl:block">
-                <a href="#section-contacts" class="inline-block w-[30px] md:w-[60px]">
+                <a href="#section-intro" class="inline-block w-[30px] md:w-[60px]">
                     <svg class="arrowsScroll animatedArrow"><path class="a1" d="M0 0 L30 32 L60 0"></path></svg>
                 </a>
             </div>
