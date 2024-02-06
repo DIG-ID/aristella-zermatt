@@ -77,3 +77,6 @@
 
 	</div>
 </footer>
+<div id="footbar" class="flex lg:hidden fixed bg-red bottom-0 h-10 w-full z-50 items-center justify-center">
+    <a href="<?php the_field( 'general_simple_booking_url', 'option' ); ?>" target="_blank" class="uppercase font-primary_black text-beige w-full text-center"><?php esc_html_e( 'Jetzt Buchen', '' ) ?></a>
+</div>
