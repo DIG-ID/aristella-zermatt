@@ -1,6 +1,6 @@
-<section class="section-events overflow-hidden bg-red pt-14 pb-0 lg:py-14">
+<section class="section-specials overflow-hidden bg-red py-14">
     <div class="grid grid-cols-1 md:grid-cols-8 xl:grid-cols-9 md:gap-4 xl:gap-9">
-        <div class="col-span-1 md:col-span-8 xl:col-span-7 col-start-1 md:col-start-1 xl:col-start-2 px-7 lg:px-0">
+        <div class="col-span-1 md:col-span-8 xl:col-span-7 col-start-1 md:col-start-1 xl:col-start-2 px-7 xl:px-0">
             <div class="swiper events-swiper">
 				<div class="swiper-wrapper">
 					<?php
