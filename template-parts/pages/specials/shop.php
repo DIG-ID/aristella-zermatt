@@ -1,16 +1,20 @@
 <section class="section-shop overflow-hidden bg-beige py-[100px]">
-    <?php $specials_page = get_page_by_path('specials'); ?>
+    <?php 
+    $current_language = ICL_LANGUAGE_CODE;
+    $specials_page = get_page_by_path('specials');
+    $specials_page_id = apply_filters( 'wpml_object_id', $specials_page->ID, 'page', true, $current_language );
+     ?>
     <div class="ar-container-grid mb-20">
         <div class="col-span-1 md:col-span-8 xl:col-span-12 text-center px-7 lg:px-0">
-            <h2 class="title-normal text-black uppercase mb-3"><?php the_field( 'shop_title', $specials_page->ID ); ?></h2>
-            <p class="text-body text-black"><?php the_field( 'shop_subtitle', $specials_page->ID ); ?></p>
+            <h2 class="title-normal text-black uppercase mb-3"><?php the_field( 'shop_title', $specials_page_id ); ?></h2>
+            <p class="text-body text-black"><?php the_field( 'shop_subtitle', $specials_page_id ); ?></p>
         </div>
     </div>
     <div class="ar-container-grid">
         <div class="col-span-1 md:col-span-6 xl:col-span-6 md:col-start-2 xl:col-start-4 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3 md:gap-4 xl:gap-9">
             <?php
-            if( have_rows('shop_list', $specials_page->ID) ):
-            while( have_rows('shop_list', $specials_page->ID) ) : the_row(); ?>
+            if( have_rows('shop_list', $specials_page_id) ):
+            while( have_rows('shop_list', $specials_page_id) ) : the_row(); ?>
                 <div class="col-span-1 flex flex-col items-center mb-16 lg:mb-0">
                     <?php 
                     $iconImg = get_sub_field('icon');
