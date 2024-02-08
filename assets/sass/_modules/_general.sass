@@ -14,6 +14,19 @@
         list-style-type: disc
         padding-left: 40px !important
 
+//animate arrow from hero section
+@keyframes jump
+    0%, 100%
+        transform: translateY(0)
+    
+    45%, 55%
+        transform: translateY(-50px)
+
+.animatedArrow
+    overflow: visible
+    path
+        animation: jump 1.5s infinite
+
 .after
     &-triangle
         &::after
