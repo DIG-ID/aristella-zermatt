@@ -5,7 +5,7 @@
  */
 function theme_before_main_content() {
 	?>
-	<main id="main-content" class="main-content">
+	<main id="main-content" class="main-content xl:-mt-5">
 	<?php
 }
 

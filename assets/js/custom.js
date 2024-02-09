@@ -1,5 +1,15 @@
 // wait until DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
+    window.addEventListener('scroll', function() {
+        var header = document.getElementById('header-main');
+        if (window.scrollY > 100) { // Adjust this value to the scroll position where you want the class to disappear
+            header.classList.remove('header-mask');
+            document.getElementById('menu-container').classList.remove('xl:pb-14');
+        } else {
+            header.classList.add('header-mask');
+            document.getElementById('menu-container').classList.add('xl:pb-14');
+        }
+    });
 	//wait until images, links, fonts, stylesheets, and js is loaded
 	const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
     const mobileMenu = document.querySelector(".mobile-menu");
