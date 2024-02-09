@@ -1,4 +1,4 @@
-<header id="header-main" class="header-main w-full fixed top-0 z-40 bg-white" itemscope itemtype="http://schema.org/WebSite">
+<header id="header-main" class="header-main w-full fixed top-0 z-40 bg-black" itemscope itemtype="http://schema.org/WebSite">
 	<nav class="navigation-main bg-black w-full flex items-center py-0 xl:py-0 min-h-[92px]" role="navigation" aria-label="<?php esc_attr_e( 'main navigation', 'aristella' ); ?>">
 		<div class="menu relative w-full max-w-[1320px] mx-auto items-center justify-evenly">
 			<div class="site-branding">
