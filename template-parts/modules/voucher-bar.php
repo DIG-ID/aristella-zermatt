@@ -17,7 +17,7 @@
 			</a>
 			<a class="text-sm uppercase text-beige text-center block bg-no-repeat relative lg:absolute lg:top-[-3.3rem] left-1/2 -translate-x-1/2 w-[180px] h-[80px] order-1 lg:order-2" href="<?php the_field( 'general_vouchershop_url', 'option' ); ?>" target="_blank">
 				<img class="absolute" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/vouchers-band.png" alt="vouchers" title="vouchers">
-				<span class="font-primary_light_cn_italic block z-30 relative pt-[6px]"><?php esc_html_e( 'ONLINE KAUFEN', 'aristella' ) ?></span>
+				<span class="arrow__voucher w-full font-primary_light_cn_italic block z-30 relative pt-[6px]"><?php esc_html_e( 'ONLINE KAUFEN', 'aristella' ) ?></span>
 			</a>
 		</div>
 	</div>
