@@ -268,7 +268,7 @@ function aristella_theme_google_map_init() {
 add_action( 'acf/init', 'aristella_theme_google_map_init' );
 
 // Remove <p> from Contact Form 7
-add_filter( 'wpcf7_autop_or_not', '__return_false' );
+//add_filter( 'wpcf7_autop_or_not', '__return_false' );
 
 
 /**
