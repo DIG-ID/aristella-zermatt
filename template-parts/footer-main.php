@@ -1,4 +1,4 @@
-<footer class="footer-main border-t pt-14 bg-black text-beige px-8 lg:px-0 text-center lg:text-left">
+<footer class="footer-main pt-14 bg-black text-beige px-8 lg:px-0 text-center lg:text-left">
     <div class="ar-container-grid">
         <div class="ar-container-small">
             <div class="col-span-1 md:col-span-8 xl:col-span-12 flex xl:block justify-center xl:justify-normal order-1">
@@ -13,7 +13,7 @@
                 <p class="text-body text-[#a0a0a0] uppercase py-5"><?php esc_html_e( 'ARISTELLA SWISSFLAIR HOTEL & APARTEMENT', 'aristella' ) ?><br><?php esc_html_e( 'RESTAURANT SPYCHER', 'aristella' ) ?></p>
             </div>
             <div class="col-span-1 md:col-span-8 xl:col-span-4 text-center lg:text-right pt-11 lg:pr-12 mb-8 lg:mb-0 order-4 lg:order-3">
-                <a href="<?php get_field( 'general_socials_facebook_url', 'option' ) ?>" class="inline-block mr-1">
+                <a href="<?php the_field( 'general_socials_facebook_url', 'option' ) ?>" class="inline-block mr-1">
                     <?php 
                     $fbImg = get_field( 'general_socials_facebook_icon', 'option' );
                     $size = 'full';
@@ -24,14 +24,14 @@
                 </a>
                 <a href="<?php get_field( 'general_socials_instagram_url', 'option' ) ?>" class="inline-block mr-1">
                     <?php 
-                    $fbImg = get_field( 'general_socials_instagram_icon', 'option' );
+                    $fbImg = the_field( 'general_socials_instagram_icon', 'option' );
                     $size = 'full';
                     $classes = 'w-5';
                     if( $fbImg ) {
                         echo wp_get_attachment_image( $fbImg, $size, false, array('class' => $classes) );
                     } ?>
                 </a>
-                <a href="<?php get_field( 'general_socials_youtube_url', 'option' ) ?>" class="inline-block">
+                <a href="<?php the_field( 'general_socials_youtube_url', 'option' ) ?>" class="inline-block">
                     <?php 
                     $fbImg = get_field( 'general_socials_youtube_icon', 'option' );
                     $size = 'full';
@@ -58,7 +58,7 @@
     <div class="ar-container-grid border-t border-t-[#1e1e1e] py-6">
 		<div class="col-span-1 md:col-span-8 xl:col-span-8 xl:col-start-3 flex flex-col xl:flex-row justify-center xl:justify-between items-center">
 			<div class="copy-info flex flex-col xl:flex-row mb-8 lg:mb-0">
-                <p class="font-primary_cn text-[13px] tracking-[-0.015em] leading-[1.7] text-[#a0a0a0]"><?php the_field( 'contacts_address', 'option' ); ?></p>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/map_marker.svg" alt="map marker" title="map marker" class="w-[13px] mr-2"><p class="font-primary_cn text-[13px] tracking-[-0.015em] leading-[1.7] text-[#a0a0a0]"><?php the_field( 'contacts_address', 'option' ); ?></p>
 			</div>
 			<div class="copy-menu">
 				<?php

@@ -72,6 +72,6 @@
             }
             ?>
         <div class="text-body mt-10 mb-5 xl:pr-[7.3rem]"><?php the_excerpt(); ?></div>
-        <a class="btn-normal-s !font-bold !px-8 !py-5" href="<?php the_permalink(); ?>"><?php echo esc_html_e( 'Mehr Erfahren', 'aristella' ) ?></a>
+        <a class="btn-normal-s !font-bold !px-8 !py-5" href="<?php the_permalink(); ?>"><?php echo esc_html_e( 'Mehr erfahren', 'aristella' ) ?></a>
     </div>
 </article>
