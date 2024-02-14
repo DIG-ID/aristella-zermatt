@@ -1,5 +1,28 @@
 // wait until DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
+    window.addEventListener("load", () => {
+		if (document.body.classList.contains("page-template-page-home") || 
+        document.body.classList.contains("page-template-page-benis")) {
+            // Get all elements with the fade-in class
+            var images = document.querySelectorAll('.fade-in');
+
+            // Create a new intersection observer for each image
+            images.forEach(function(image) {
+                var observer = new IntersectionObserver(function(entries) {
+                    // If intersection ratio is greater than 0, add class to fade in
+                    if(entries[0].intersectionRatio > 0) {
+                        image.classList.add('is-visible');
+                    }
+                }, { threshold: [0] });
+
+                // Observe each image element
+                observer.observe(image);
+            });
+        }
+
+	}, false);
+
+    //header mountain mask
     window.addEventListener('scroll', function() {
         var header = document.getElementById('header-main');
         if (window.scrollY > 100) { // Adjust this value to the scroll position where you want the class to disappear

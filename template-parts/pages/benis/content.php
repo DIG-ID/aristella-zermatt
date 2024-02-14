@@ -17,7 +17,7 @@
                     <?php 
                     $tipsImg = get_sub_field('image');
                     $size = 'full';
-                    $classes = 'w-full';
+                    $classes = 'w-full fade-in';
                     if( $tipsImg ) {
                         echo wp_get_attachment_image( $tipsImg, $size, false, array('class' => $classes) );
                     } ?>

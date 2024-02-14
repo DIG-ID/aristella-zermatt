@@ -4,7 +4,7 @@
             <?php 
             $historyImg = get_field('history_image');
             $size = 'full';
-            $classes = 'w-full';
+            $classes = 'w-full fade-in';
             if( $historyImg ) {
                 echo wp_get_attachment_image( $historyImg, $size, false, array('class' => $classes) );
             } ?>

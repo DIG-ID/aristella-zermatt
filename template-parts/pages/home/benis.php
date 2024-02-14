@@ -28,7 +28,7 @@
                 <?php
                 $benisImg1 = get_field('benis_image_1', $home_page_id);
                 $size = 'full';
-                $classes = 'w-full xl:w-96';
+                $classes = 'w-full xl:w-96 fade-in';
                 if( $benisImg1 ) {
                     echo wp_get_attachment_image( $benisImg1, $size, false, array('class' => $classes) );
                 } ?>
@@ -47,7 +47,7 @@
                 <?php
                 $benisImg2 = get_field('benis_image_2', $home_page_id);
                 $size = 'full';
-                $classes = 'w-full xl:w-96';
+                $classes = 'w-full xl:w-96 fade-in';
                 if( $benisImg2 ) {
                     echo wp_get_attachment_image( $benisImg2, $size, false, array('class' => $classes) );
                 } ?>
