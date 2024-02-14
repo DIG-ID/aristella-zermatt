@@ -1,4 +1,4 @@
-<section id="section-content" class="section-content bg-white overflow-hidden pb-20 lg:pb-40">
+<section id="section-content" class="section-content-datainfo bg-white overflow-hidden pb-20 lg:pb-40">
     <div class="ar-container-grid">
         <div class="col-span-1 md:col-span-8 xl:col-span-12 py-12 lg:py-28 text-center">
             <img class="mx-auto mb-7" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/title-ornament-dark.png" alt="ornament" title="ornament">
