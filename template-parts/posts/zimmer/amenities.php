@@ -37,18 +37,18 @@
                 'zeitungc' => 'zeitungc.png',
                 'zimmersafe' => 'zimmersafe.png',
             );
-            $selected_features = get_field('amenities_amenities_list'); 
+            $selected_features = get_field('amenities_list'); 
             $persons = get_field( 'amenities_number_of_persons' );
             if ($selected_features) {
-                echo '<ul class="flex flex-col lg:flex-row justify-center items-center overflow-hidden">';
-                echo '<li class="flex flex-col items-center mb-7 mx-7"><img class="w-[42px]" src="' . get_template_directory_uri() . '/assets/images/amenities/person.png" alt="persons"><span class="font-primary_bold_cn text-beige text-xs tracking-[-0.015em] uppercase mt-3">' . esc_html($persons) . '</span></li>';
+                echo '<ul class="flex flex-col lg:flex-wrap lg:flex-row justify-center items-center overflow-hidden">';
+                echo '<li class="flex flex-col items-center mb-7 mx-5"><img class="w-[42px]" src="' . get_template_directory_uri() . '/assets/images/amenities/person.png" alt="persons"><span class="font-primary_bold_cn text-beige text-xs tracking-[-0.015em] uppercase mt-3">' . esc_html($persons) . '</span></li>';
                 foreach ($selected_features as $feature) {
                     $feature_label = $feature['label'];
                     $feature_value = $feature['value'];
 
                     if (isset($feature_to_svg[$feature_value])) {
                         $svg_filename = $feature_to_svg[$feature_value];
-                        echo '<li class="flex flex-col items-center mb-7 mx-7"><img class="w-[42px]" src="' . esc_url(get_template_directory_uri() . '/assets/images/amenities/' . $svg_filename) . '" alt="' . esc_attr($feature_label) . '"><span class="font-primary_bold_cn text-beige text-xs tracking-[-0.015em] uppercase mt-3">' . esc_html($feature_label) . '</span></li>';
+                        echo '<li class="flex flex-col items-center mb-7 mx-5"><img class="w-[42px]" src="' . esc_url(get_template_directory_uri() . '/assets/images/amenities/' . $svg_filename) . '" alt="' . esc_attr($feature_label) . '"><span class="font-primary_bold_cn text-beige text-xs tracking-[-0.015em] uppercase mt-3">' . esc_html($feature_label) . '</span></li>';
                     } else {
                         echo '<li>' . esc_html($feature_label) . '</li>';
                     }

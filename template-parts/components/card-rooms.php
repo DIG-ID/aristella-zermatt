@@ -46,8 +46,7 @@
                 'zeitungc' => 'zeitungc-dark.png',
                 'zimmersafe' => 'zimmersafe-dark.png',
             );
-            $selected_features = get_field('amenities_amenities_list'); 
-            $persons = get_field( 'amenities_number_of_persons' );
+            $selected_features = get_field('amenities_list'); 
             if ($selected_features) {
                 echo '<ul class="flex justify-start items-center">';
                 $counter = 0;
@@ -68,7 +67,7 @@
                 }
                 echo '</ul>';
             } else {
-                echo __('No features selected.', 'aristella');
+                echo __('No amenities selected.', 'aristella');
             }
             ?>
         <div class="text-body mt-10 mb-5 xl:pr-[7.3rem]"><?php the_excerpt(); ?></div>
