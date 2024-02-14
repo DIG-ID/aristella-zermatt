@@ -13,7 +13,7 @@
                 <p class="text-body text-[#a0a0a0] uppercase py-5"><?php esc_html_e( 'ARISTELLA SWISSFLAIR HOTEL & APARTEMENT', 'aristella' ) ?><br><?php esc_html_e( 'RESTAURANT SPYCHER', 'aristella' ) ?></p>
             </div>
             <div class="col-span-1 md:col-span-8 xl:col-span-4 text-center lg:text-right pt-11 lg:pr-12 mb-8 lg:mb-0 order-4 lg:order-3">
-                <a href="<?php the_field( 'general_socials_facebook_url', 'option' ) ?>" class="inline-block mr-1" target="_blank>
+                <a href="<?php the_field( 'general_socials_facebook_url', 'option' ) ?>" class="inline-block mr-1" target="_blank">
                     <?php 
                     $fbImg = get_field( 'general_socials_facebook_icon', 'option' );
                     $size = 'full';
@@ -31,7 +31,7 @@
                         echo wp_get_attachment_image( $fbImg, $size, false, array('class' => $classes) );
                     } ?>
                 </a>
-                <a href="<?php the_field( 'general_socials_youtube_url', 'option' ) ?>" class="inline-block" target="_blank>
+                <a href="<?php the_field( 'general_socials_youtube_url', 'option' ) ?>" class="inline-block" target="_blank">
                     <?php 
                     $fbImg = get_field( 'general_socials_youtube_icon', 'option' );
                     $size = 'full';
