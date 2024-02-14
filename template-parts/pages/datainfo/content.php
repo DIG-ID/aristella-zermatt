@@ -2,7 +2,7 @@
     <div class="ar-container-grid">
         <div class="col-span-1 md:col-span-8 xl:col-span-12 py-12 lg:py-28 text-center">
             <img class="mx-auto mb-7" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/title-ornament-dark.png" alt="ornament" title="ornament">
-            <h2 class="title-normal text-black uppercase"><?php the_title(); ?></h2>
+            <h2 class="title-normal text-black uppercase"><?php the_field( 'main_title' ); ?></h2>
         </div>
 	</div>
     <div class="ar-container-grid">
