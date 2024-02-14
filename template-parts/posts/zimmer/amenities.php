@@ -22,6 +22,7 @@
                 'lactosefree' => 'lactosefree.png',
                 'minibar' => 'minibar.png',
                 'nichtraucher' => 'niichtraucher.png',
+                'persons' => 'person.png',
                 'raucherbereich' => 'raucherbereich.png',
                 'rest' => 'rest.png',
                 'romantik' => 'romantik.png',
@@ -38,10 +39,8 @@
                 'zimmersafe' => 'zimmersafe.png',
             );
             $selected_features = get_field('amenities_list'); 
-            $persons = get_field( 'amenities_number_of_persons' );
             if ($selected_features) {
                 echo '<ul class="flex flex-col lg:flex-wrap lg:flex-row justify-center items-center overflow-hidden">';
-                echo '<li class="flex flex-col items-center mb-7 mx-5"><img class="w-[42px]" src="' . get_template_directory_uri() . '/assets/images/amenities/person.png" alt="persons"><span class="font-primary_bold_cn text-beige text-xs tracking-[-0.015em] uppercase mt-3">' . esc_html($persons) . '</span></li>';
                 foreach ($selected_features as $feature) {
                     $feature_label = $feature['label'];
                     $feature_value = $feature['value'];
