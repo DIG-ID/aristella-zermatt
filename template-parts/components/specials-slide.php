@@ -5,7 +5,7 @@
                 $full_image_url = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
             ?>
                 <div class="featured-image">
-                    <img src="<?php echo $full_image_url[0]; ?>" alt="<?php the_title(); ?>" class="w-full" />
+                    <img src="<?php echo $full_image_url[0]; ?>" alt="<?php the_title(); ?>" class="w-full fade-in" />
                 </div>
             <?php else : ?>
                 <div class="featured-image">

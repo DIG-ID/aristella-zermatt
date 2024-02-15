@@ -16,7 +16,7 @@
             <?php 
             $restaurantImg = get_field('restaurant_image');
             $size = 'full';
-            $classes = 'w-full';
+            $classes = 'w-full fade-in';
             if( $restaurantImg ) {
                 echo wp_get_attachment_image( $restaurantImg, $size, false, array('class' => $classes) );
             } ?>

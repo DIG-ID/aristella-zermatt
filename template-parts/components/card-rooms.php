@@ -3,7 +3,7 @@
         <?php 
         $roomImg = get_field( 'hero_image' );
         $size = 'large';
-        $classes = 'w-full h-full object-cover';
+        $classes = 'w-full h-full object-cover fade-in';
         if( $roomImg ) {
             echo wp_get_attachment_image( $roomImg, $size, false, array('class' => $classes) );
         } ?>

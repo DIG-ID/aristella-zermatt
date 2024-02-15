@@ -2,7 +2,10 @@
 document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("load", () => {
 		if (document.body.classList.contains("page-template-page-home") || 
-        document.body.classList.contains("page-template-page-benis")) {
+        document.body.classList.contains("page-template-page-benis") || 
+        document.body.classList.contains("page-template-page-zermatt") || 
+        document.body.classList.contains("post-type-archive-zimmer") || 
+        document.body.classList.contains("page-template-page-specials")) {
             // Get all elements with the fade-in class
             var images = document.querySelectorAll('.fade-in');
 
