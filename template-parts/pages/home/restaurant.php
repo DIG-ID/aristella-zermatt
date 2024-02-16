@@ -23,7 +23,7 @@
         </div>
         <div class="col-span-1 md:col-span-8 xl:col-span-6 xl:py-5 xl:px-10 bg__restaurant flex flex-col justify-between">
             <div class="text__restaurant bg-black xl:bg-inherit py-5 px-10">
-                <h3 class="font-primary_cn_italic text-beige text-[22px] tracking-[-0.015em] leading-[1.7] mb-5 md:max-w-[280px]"><?php the_field( 'restaurant_title' ); ?></h3>
+                <h3 class="font-primary_cn_italic text-beige text-[22px] tracking-[-0.015em] leading-[1.7] mb-5"><?php the_field( 'restaurant_title' ); ?></h3>
                 <p class="text-body text-beige"><?php the_field( 'restaurant_text' ); ?></p>
                 <a href="<?php the_field( 'restaurant_call_to_action' ); ?>"><i class="icomoon-square-white"></i></a>
             </div>
