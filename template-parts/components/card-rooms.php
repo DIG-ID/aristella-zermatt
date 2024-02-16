@@ -71,6 +71,22 @@
             }
             ?>
         <div class="text-body mt-10 mb-5 xl:pr-[7.3rem]"><?php the_excerpt(); ?></div>
-        <a class="btn-normal-s !font-bold !px-8 !py-5" href="<?php the_permalink(); ?>"><?php echo esc_html_e( 'Mehr erfahren', 'aristella' ) ?></a>
+        <a class="btn-normal-s !font-bold !px-8 !py-5" href="<?php the_permalink(); ?>">
+            <?php
+            $language_code = ICL_LANGUAGE_CODE;
+            $translated_text = '';
+            switch ($language_code) {
+                case 'en':
+                    $translated_text = __('More information', 'aristella');
+                    break;
+                case 'fr':
+                    $translated_text = __('Plus d\'information ', 'aristella'); 
+                    break;
+                default:
+                    $translated_text = __('Mehr erfahren', 'aristella');
+            }
+            echo esc_html($translated_text); 
+            ?>
+        </a>
     </div>
 </article>
