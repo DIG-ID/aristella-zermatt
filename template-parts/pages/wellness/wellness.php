@@ -5,7 +5,7 @@
         while( have_rows('wellness_list') ) : the_row(); ?>
             <div class="col-span-1 md:col-span-8 xl:col-span-12 lg:mb-[100px] relative">
                 <div class="bg__wellness lg:absolute right-40 top-0 lg:w-[320px] lg:h-[220px] pt-16 lg:pt-4 px-5 pb-6">
-                    <h3 class="title-normal text-blue !text-[34px] uppercase mb-12"><?php the_sub_field( 'title' ); ?></h3>
+                    <h3 class="title-normal text-blue !text-[34px] uppercase mb-14"><?php the_sub_field( 'title' ); ?></h3>
                     <p class="text-body text-beige"><?php the_sub_field( 'text' ); ?></p>
                 </div>
                 <?php 

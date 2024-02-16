@@ -28,7 +28,7 @@
             <?php 
             $parkingImg = get_field('parking_banner');
             $size = 'full';
-            $classes = 'w-full';
+            $classes = 'w-full fade-in';
             if( $parkingImg ) {
                 echo wp_get_attachment_image( $parkingImg, $size, false, array('class' => $classes) );
             } ?>

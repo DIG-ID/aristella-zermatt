@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.contains("page-template-page-benis") || 
         document.body.classList.contains("page-template-page-zermatt") || 
         document.body.classList.contains("post-type-archive-zimmer") || 
-        document.body.classList.contains("page-template-page-specials")) {
+        document.body.classList.contains("page-template-page-specials") || 
+        document.body.classList.contains("page-template-page-anreise")) {
             // Get all elements with the fade-in class
             var images = document.querySelectorAll('.fade-in');
 

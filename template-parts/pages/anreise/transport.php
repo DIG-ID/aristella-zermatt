@@ -27,7 +27,7 @@
             <?php 
             $transportImg = get_field('transport_banner');
             $size = 'full';
-            $classes = 'w-full';
+            $classes = 'w-full fade-in';
             if( $transportImg ) {
                 echo wp_get_attachment_image( $transportImg, $size, false, array('class' => $classes) );
             } ?>
