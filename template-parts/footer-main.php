@@ -57,7 +57,7 @@
     </div>
     <div class="ar-container-grid border-t border-t-[#1e1e1e] py-6">
 		<div class="col-span-1 md:col-span-8 xl:col-span-8 xl:col-start-3 flex flex-col xl:flex-row justify-center xl:justify-between items-center">
-			<div class="copy-info flex flex-col xl:flex-row mb-8 lg:mb-0">
+			<div class="copy-info flex flex-row mb-8 xl:mb-0">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/map_marker.svg" alt="map marker" title="map marker" class="w-[13px] mr-2"><p class="font-primary_cn text-[13px] tracking-[-0.015em] leading-[1.7] text-[#a0a0a0]"><?php the_field( 'contacts_address', 'option' ); ?></p>
 			</div>
 			<div class="copy-menu">

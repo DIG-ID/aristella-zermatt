@@ -96,6 +96,10 @@ document.addEventListener("DOMContentLoaded", () => {
 					delay: 4500,
 					disableOnInteraction: false,
 				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
 				thumbs: {
 					swiper: {
 						el: ".room-swiper-thumbnails",

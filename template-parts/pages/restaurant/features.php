@@ -9,7 +9,7 @@
                 $order_class = ($iteration % 2 === 0) ? 'xl:order-2' : 'xl:order-1';
                 ?>
 
-                <div class="px-7 lg:px-0 pb-7 lg:pb-0 pt-7 lg:pt-0 col-span-1 md:col-span-8 xl:col-span-6 <?php echo esc_attr($order_class); ?>">
+                <div class="px-7 lg:px-0 pb-7 lg:pb-0 pt-7 lg:pt-0 col-span-1 md:col-span-8 xl:col-span-6 <?php echo esc_attr($order_class); ?> features__content<?php echo $plus; ?>">
                     <?php
                     $slider = get_sub_field( 'images' );
                     if ( $slider ) :

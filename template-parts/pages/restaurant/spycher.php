@@ -1,4 +1,4 @@
-<section class="section-features overflow-hidden relative bg-beige pt-14 pb-20 lg:py-[100px] px-7 lg:px-0">
+<section class="section-features overflow-hidden relative bg-beige pt-14 pb-0 lg:py-[100px] px-7 lg:px-0">
     <div class="ar-container-grid">
         <div class="ar-container-small py-14 border-t border-b border-black">
             <div class="col-span-1 md:col-span-2 xl:col-span-3">
