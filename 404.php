@@ -2,13 +2,15 @@
 get_header();
 do_action( 'before_main_content' );
 ?>
-<section class="section-error-404 not-found  az-container overflow-hidden mt-8 md:mt-12 xl:mt-28 mb-20 md:mb-36 xl:mb-52">
-	<div class="az-container-grid">
-		<div class="col-span-1 md:col-span-8 xl:col-span-8 xl:col-start-3 flex flex-col text-center justify-center items-center">
-			<span class="az-vertical-line-medium inline-block mb-12"></span>
-			<h1 class="title-sub mb-10 md:mb-12 xl:mb-16"><?php esc_html_e( '404 - Nichts gefunden', 'aristella' ); ?></h1>
-			<p class="title-xl !hyphens-none mb-10 md:mb-12 xl:mb-16"><?php esc_html_e( 'Ups... es scheint, als ob Sie sich in den Bergen verirrt haben.', 'aristella' ); ?></p>
-			<a href="<?php echo esc_url( get_home_url() ); ?>" class="btn btn--arrow-left"><?php esc_html_e( 'Zurück zur Webseite', 'aristella' ); ?></a>
+<section class="section-error-404 bg-beige overflow-hidden pt-64 pb-40">
+	<div class="ar-container-grid">
+        <div class="ar-container-small">
+            <div class="col-span-1 md:col-span-8 xl:col-span-12 px-7 lg:px-0 items-center justify-center text-center">
+				<img class="w-14 mx-auto" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/face-frown.svg" alt="vouchers" title="vouchers">
+				<h1 class="font-primary_cn font-normal text-5xl text-black py-5"><?php esc_html_e( 'Error 404', 'aristella' ); ?></h1>
+				<p class="text-body pb-7"><?php esc_html_e( 'Leider konnten wir diese Seite nicht finden!', 'aristella' ); ?></p>
+				<a href="<?php echo esc_url( get_home_url() ); ?>" class="btn-normal"><?php esc_html_e( 'ZUR STARTSEITE', 'aristella' ); ?></a>
+			</div>
 		</div>
 	</div>
 </section>
