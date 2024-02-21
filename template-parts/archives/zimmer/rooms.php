@@ -1,6 +1,6 @@
 <section id="section-rooms" class="section-rooms">
     <div class="ar-container-grid">
-        <div class="col-span-1 md:col-span-8 xl:col-span-12 bg-beige px-7 lg:px-0 pt-24 pb-8 text-center">
+        <div class="col-span-1 md:col-span-8 xl:col-span-12 bg-beige px-7 lg:px-0 pt-24 pb-24 text-center">
             <h2 class="title-normal text-black uppercase"><?php the_field( 'zimmer_rooms_title', 'option' ); ?></h2>
             <p class="title-caption text-black"><?php the_field( 'zimmer_rooms_subtitle', 'option' ); ?></p>
             <img class="mx-auto my-12" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/title-ornament-dark.png" alt="ornament" title="ornament">
