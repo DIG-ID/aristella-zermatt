@@ -73,8 +73,8 @@ if ( ! function_exists( 'aristella_get_font_face_styles' ) ) :
 			/* Univers LT Std */
 			@font-face {
 				font-family: 'Univers LT Std';
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd.woff2') format('woff2'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd.woff') format('woff');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd.woff2') format('woff2'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd.woff') format('woff');
 				font-weight: normal;
 				font-style: normal;
 			}
@@ -82,12 +82,12 @@ if ( ! function_exists( 'aristella_get_font_face_styles' ) ) :
 			/* Univers LT Std Obl */
 			@font-face {
 				font-family: 'Univers LT Std Obl';
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Obl.woff2') format('woff2'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Obl.woff') format('woff');
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Obl.eot');
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Obl.eot?#iefix') format('embedded-opentype'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Obl.ttf') format('truetype'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Obl.svg#UniversLTStd-Obl') format('svg');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Obl.woff2') format('woff2'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Obl.woff') format('woff');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Obl.eot');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Obl.eot?#iefix') format('embedded-opentype'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Obl.ttf') format('truetype'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Obl.svg#UniversLTStd-Obl') format('svg');
 				font-weight: normal;
 				font-style: italic;
 			}
@@ -95,12 +95,12 @@ if ( ! function_exists( 'aristella_get_font_face_styles' ) ) :
 			/* Univers LT Std Cn */
 			@font-face {
 				font-family: 'Univers LT Std Cn';
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Cn.woff2') format('woff2'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Cn.woff') format('woff');
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Cn.eot');
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Cn.eot?#iefix') format('embedded-opentype'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Cn.ttf') format('truetype'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Cn.svg#UniversLTStd-Cn') format('svg');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Cn.woff2') format('woff2'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Cn.woff') format('woff');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Cn.eot');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Cn.eot?#iefix') format('embedded-opentype'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Cn.ttf') format('truetype'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Cn.svg#UniversLTStd-Cn') format('svg');
 				font-weight: normal;
 				font-style: normal;
 			}
@@ -108,8 +108,8 @@ if ( ! function_exists( 'aristella_get_font_face_styles' ) ) :
 			/* Univers LT Std CnObl */
 			@font-face {
 				font-family: 'Univers LT Std CnObl';
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-CnObl.woff2') format('woff2'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-CnObl.woff') format('woff');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-CnObl.woff2') format('woff2'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-CnObl.woff') format('woff');
 				font-weight: normal;
 				font-style: italic;
 			}
@@ -117,8 +117,8 @@ if ( ! function_exists( 'aristella_get_font_face_styles' ) ) :
 			/* Univers LT Std Black */
 			@font-face {
 				font-family: 'Univers LT Std Black';
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Black.woff2') format('woff2'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Black.woff') format('woff');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Black.woff2') format('woff2'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Black.woff') format('woff');
 				font-weight: 900;
 				font-style: normal;
 			}
@@ -126,8 +126,8 @@ if ( ! function_exists( 'aristella_get_font_face_styles' ) ) :
 			/* Univers LT Std Bold */
 			@font-face {
 				font-family: 'Univers LT Std Bold';
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Bold.woff2') format('woff2'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Bold.woff') format('woff');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Bold.woff2') format('woff2'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Bold.woff') format('woff');
 				font-weight: bold;
 				font-style: normal;
 			}
@@ -137,18 +137,18 @@ if ( ! function_exists( 'aristella_get_font_face_styles' ) ) :
 				font-family: 'Univers LT Std Bold Cn';
 				font-weight: bold;
 				font-style: normal;
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-BoldCn.woff2') format('woff2'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-BoldCn.woff') format('woff'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-BoldCn.eot') format('embedded-opentype'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-BoldCn.ttf') format('truetype'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-BoldCn.svg#UniversLTStd-BoldCn') format('svg');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-BoldCn.woff2') format('woff2'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-BoldCn.woff') format('woff'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-BoldCn.eot') format('embedded-opentype'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-BoldCn.ttf') format('truetype'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-BoldCn.svg#UniversLTStd-BoldCn') format('svg');
 			}
 
 			/* Univers LT Light */
 			@font-face {
 				font-family: 'Univers LT Std Light';
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Light.woff2') format('woff2'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Light.woff') format('woff');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Light.woff2') format('woff2'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Light.woff') format('woff');
 				font-weight: 300;
 				font-style: normal;
 			}
@@ -156,8 +156,8 @@ if ( ! function_exists( 'aristella_get_font_face_styles' ) ) :
 			/* Univers LT Light Obl */
 			@font-face {
 				font-family: 'Univers LT Std Light Obl';
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightObl.woff2') format('woff2'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightObl.woff') format('woff');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightObl.woff2') format('woff2'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightObl.woff') format('woff');
 				font-weight: 300;
 				font-style: italic;
 			}
@@ -165,8 +165,8 @@ if ( ! function_exists( 'aristella_get_font_face_styles' ) ) :
 			/* Univers LT Light Cn */
 			@font-face {
 				font-family: 'Univers LT Light Cn';
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCn.woff2') format('woff2'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCn.woff') format('woff');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCn.woff2') format('woff2'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCn.woff') format('woff');
 				font-weight: 300;
 				font-style: normal;
 			}
@@ -174,12 +174,12 @@ if ( ! function_exists( 'aristella_get_font_face_styles' ) ) :
 			/* Univers LT Std Light CnObl */
 			@font-face {
 				font-family: 'Univers LT Std Light CnObl';
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCnObl.woff2') format('woff2'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCnObl.woff') format('woff');
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCnObl.eot');
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCnObl.eot?#iefix') format('embedded-opentype'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCnObl.ttf') format('truetype'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCnObl.svg#UniversLTStd-LightCnObl') format('svg');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCnObl.woff2') format('woff2'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCnObl.woff') format('woff');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCnObl.eot');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCnObl.eot?#iefix') format('embedded-opentype'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCnObl.ttf') format('truetype'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCnObl.svg#UniversLTStd-LightCnObl') format('svg');
 				font-weight: 300;
 				font-style: italic;
 			}
@@ -187,23 +187,23 @@ if ( ! function_exists( 'aristella_get_font_face_styles' ) ) :
 			/* Univers LT Std Light Ultra */
 			@font-face {
 				font-family: 'Univers LT Std Light Ultra';
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightUltraCn.woff2') format('woff2'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightUltraCn.woff') format('woff');
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightUltraCn.eot');
-				src: url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightUltraCn.eot?#iefix') format('embedded-opentype'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightUltraCn.ttf') format('truetype'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightUltraCn.svg#UniversLTStd-LightUltraCn') format('svg');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightUltraCn.woff2') format('woff2'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightUltraCn.woff') format('woff');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightUltraCn.eot');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightUltraCn.eot?#iefix') format('embedded-opentype'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightUltraCn.ttf') format('truetype'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightUltraCn.svg#UniversLTStd-LightUltraCn') format('svg');
 				font-weight: 300;
 			}
 
 			/* Icomoon */
 			@font-face {
 				font-family: 'icomoon';
-				src:  url('/wp-content/themes/aristella-zermatt/assets/fonts/icomoon.eot?fmmubg');
-				src:  url('/wp-content/themes/aristella-zermatt/assets/fonts/icomoon.eot?fmmubg#iefix') format('embedded-opentype'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/icomoon.ttf?fmmubg') format('truetype'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/icomoon.woff?fmmubg') format('woff'),
-					url('/wp-content/themes/aristella-zermatt/assets/fonts/icomoon.svg?fmmubg#icomoon') format('svg');
+				src:  url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/icomoon.eot?fmmubg');
+				src:  url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/icomoon.eot?fmmubg#iefix') format('embedded-opentype'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/icomoon.ttf?fmmubg') format('truetype'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/icomoon.woff?fmmubg') format('woff'),
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/icomoon.svg?fmmubg#icomoon') format('svg');
 				font-weight: normal;
 				font-style: normal;
 			}
