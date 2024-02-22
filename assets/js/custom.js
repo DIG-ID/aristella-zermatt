@@ -2,23 +2,23 @@
 document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("load", () => {
         if (document.body.classList.contains('page-template-page-restaurant')) {
-            // Update the DE link
-            var deLink = document.querySelector('.wpml-ls-item-de .wpml-ls-link');
-            if (deLink) {
+            // Update the DE links
+            var deLinks = document.querySelectorAll('.wpml-ls-item-de .wpml-ls-link');
+            deLinks.forEach(function(deLink) {
                 deLink.setAttribute('href', 'https://www.spycher-zermatt.ch');
-            }
+            });
 
-            // Update the EN link
-            var enLink = document.querySelector('.wpml-ls-item-en .wpml-ls-link');
-            if (enLink) {
+            // Update the EN links
+            var enLinks = document.querySelectorAll('.wpml-ls-item-en .wpml-ls-link');
+            enLinks.forEach(function(enLink) {
                 enLink.setAttribute('href', 'https://www.spycher-zermatt.ch/en');
-            }
+            });
 
-            // Update the FR link
-            var frLink = document.querySelector('.wpml-ls-item-fr .wpml-ls-link');
-            if (frLink) {
+            // Update the FR links
+            var frLinks = document.querySelectorAll('.wpml-ls-item-fr .wpml-ls-link');
+            frLinks.forEach(function(frLink) {
                 frLink.setAttribute('href', 'https://www.spycher-zermatt.ch/fr');
-            }
+            });
         }
         //image fade animations
 		if (document.body.classList.contains("page-template-page-home") || 
