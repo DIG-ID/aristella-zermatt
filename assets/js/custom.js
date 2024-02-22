@@ -1,6 +1,25 @@
 // wait until DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("load", () => {
+        if (document.body.classList.contains('page-template-page-restaurant')) {
+            // Update the DE link
+            var deLink = document.querySelector('.wpml-ls-item-de .wpml-ls-link');
+            if (deLink) {
+                deLink.setAttribute('href', 'https://www.spycher-zermatt.ch');
+            }
+
+            // Update the EN link
+            var enLink = document.querySelector('.wpml-ls-item-en .wpml-ls-link');
+            if (enLink) {
+                enLink.setAttribute('href', 'https://www.spycher-zermatt.ch/en');
+            }
+
+            // Update the FR link
+            var frLink = document.querySelector('.wpml-ls-item-fr .wpml-ls-link');
+            if (frLink) {
+                frLink.setAttribute('href', 'https://www.spycher-zermatt.ch/fr');
+            }
+        }
 		if (document.body.classList.contains("page-template-page-home") || 
         document.body.classList.contains("page-template-page-benis") || 
         document.body.classList.contains("page-template-page-zermatt") || 
