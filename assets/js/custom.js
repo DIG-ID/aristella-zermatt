@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 frLink.setAttribute('href', 'https://www.spycher-zermatt.ch/fr');
             }
         }
+        //image fade animations
 		if (document.body.classList.contains("page-template-page-home") || 
         document.body.classList.contains("page-template-page-benis") || 
         document.body.classList.contains("page-template-page-zermatt") || 
@@ -67,11 +68,11 @@ document.addEventListener("DOMContentLoaded", () => {
             mobileMenu.style.opacity = "0"; // Hide the menu
             setTimeout(function () {
                 mobileMenu.classList.remove("active");
-                menuIconImg.src = "/wp-content/themes/aristella-zermatt/assets/images/burger-menu.svg"; // Change image source back to burger-menu.svg
+                menuIconImg.src = "https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/images/burger-menu.svg"; // Change image source back to burger-menu.svg
             }, 300); // After the opacity transition duration
         } else {
             mobileMenu.classList.add("active");
-            menuIconImg.src = "/wp-content/themes/aristella-zermatt/assets/images/burger-menu.svg"; // Change image source to burger-menu-close.svg
+            menuIconImg.src = "https://www.aristella-zermatt.ch//wp-content/themes/aristella-zermatt/assets/images/burger-menu.svg"; // Change image source to burger-menu-close.svg
             setTimeout(function () {
                 mobileMenu.style.opacity = "1"; // Show the menu
             }, 0); // Immediately after adding the "active" class

@@ -41,7 +41,7 @@
 				</div>
 			</div>
 			<button id="mobile-menu-toggle" class="mobile-menu-toggle absolute right-4">
-				<span class="menu-icon"><img id="menu-icon-img" src="/wp-content/themes/aristella-zermatt/assets/images/burger-menu.svg" title="mobile menu" alt="mobile menu"></span>
+				<span class="menu-icon"><img id="menu-icon-img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/burger-menu.svg" title="mobile menu" alt="mobile menu"></span>
 			</button>
 		</div>
 	</nav>
