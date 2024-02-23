@@ -63,6 +63,19 @@
 		</div>
 	</div>
 </header>
+<?php
+$language_code = ICL_LANGUAGE_CODE;
+$translated_text = '';
+switch ($language_code) {
+	case 'en':
+		$translated_text = __('Table-Reservation', 'aristella');
+		break;
+	case 'fr':
+		$translated_text = __('Table-Reservation', 'aristella');
+		break;
+	default:
+		$translated_text = __('Tisch-Reservation', 'aristella');
+} ?>
 <div id="footbar-restaurant" class="flex lg:hidden fixed bg-red bottom-0 h-10 w-full z-50 items-center justify-center">
-    <a href="javascript:;" onclick="Localina.startBooking('5afc91f1-648b-45f1-a57a-31a123c91269', 'https://www.mylocalina.ch');" class="uppercase font-primary_black text-beige w-full text-center"><?php esc_html_e( 'Tisch-Reservation', 'aristella' ) ?></a>
+    <a href="javascript:;" onclick="Localina.startBooking('5afc91f1-648b-45f1-a57a-31a123c91269', 'https://www.mylocalina.ch');" class="uppercase font-primary_black text-beige w-full text-center"><?php echo esc_html($translated_text); ?></a>
 </div>
