@@ -259,6 +259,21 @@ function aristella_theme_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts', 'aristella_theme_enqueue_styles' );
 
+//table reservation
+function add_mylocalina_script() {
+    if (is_page_template('page-templates/page-restaurant.php')) {
+        wp_enqueue_script(
+            'mylocalina-script',
+            'https://www.mylocalina.ch/script/widget.js',
+            array(),
+            false,
+            true
+        );
+    }
+}
+add_action('wp_enqueue_scripts', 'add_mylocalina_script');
+
+
 //Google Map Init
 function aristella_theme_google_map_init() {
 	if ( is_admin() ) :

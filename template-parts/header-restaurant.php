@@ -31,7 +31,7 @@
 			</div>
 			<div class="reservation-menu-wrapper flex">
 				<div id="booking-menu" class="w-44 grid-cols-1">
-					<a target="_blank" href="<?php the_field( 'general_simple_booking_url', 'option' ); ?>">
+					<a href="javascript:;" onclick="Localina.startBooking('5afc91f1-648b-45f1-a57a-31a123c91269', 'https://www.mylocalina.ch');">
 						<div class="col-span-1 bg-red text-beige font-primary_cn text-[13px] leading-[1.7] tracking-[0.015em] py-[11px] flex flex-col justify-center items-center">
 							<img class="w-4 inline-block mb-2" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/calendar-days.svg" alt="calendar icon" title="calendar icon"><span class="text-center inline-block"><?php esc_html_e( 'TISCH-', 'aristella' ); ?><br><?php esc_html_e( 'RESERVATION', 'aristella' ); ?></span>
 						</div>
