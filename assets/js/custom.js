@@ -19,12 +19,23 @@ document.addEventListener("DOMContentLoaded", () => {
             frLinks.forEach(function(frLink) {
                 frLink.setAttribute('href', 'https://www.spycher-zermatt.ch/fr');
             });
-            document.getElementById('localina-booking').addEventListener('click', function(e) {
+
+            //Table Reservation Localina Booking for Restaurant Page "online" link
+            var links = document.querySelectorAll('.localina-booking');
+
+            links.forEach(function (link) {
+                link.addEventListener('click', function (e) {
                 e.preventDefault();
-                Localina.startBooking(
+
+                if (typeof Localina !== 'undefined' && typeof Localina.startBooking === 'function') {
+                    Localina.startBooking(
                     '5afc91f1-648b-45f1-a57a-31a123c91269',
                     'https://www.mylocalina.ch'
-                );
+                    );
+                } else {
+                    console.warn('Localina not available on this page.');
+                }
+                });
             });
         }
         //image fade animations
