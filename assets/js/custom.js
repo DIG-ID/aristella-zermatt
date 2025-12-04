@@ -19,6 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
             frLinks.forEach(function(frLink) {
                 frLink.setAttribute('href', 'https://www.spycher-zermatt.ch/fr');
             });
+            document.getElementById('localina-booking').addEventListener('click', function(e) {
+                e.preventDefault();
+                Localina.startBooking(
+                    '5afc91f1-648b-45f1-a57a-31a123c91269',
+                    'https://www.mylocalina.ch'
+                );
+            });
         }
         //image fade animations
 		if (document.body.classList.contains("page-template-page-home") || 
