@@ -48,8 +48,13 @@ function aristella_simplebooking_widget() {
 		};
 
 		SBSyncroBox({ CodLang: 'DE', Currency: 'CHF', Labels: { NumAdults: { DE: 'Pers.' } }, Styles: sbStyles });
-		SBSyncroBox({ CodLang: 'EN', Currency: 'CHF', MainContainerId: 'sb-container-2', Labels: { NumAdults: { EN: 'Pers.' } }, Styles: sbStyles });
-		SBSyncroBox({ CodLang: 'FR', Currency: 'CHF', MainContainerId: 'sb-container-3', Labels: { NumAdults: { FR: 'Pers.' } }, Styles: sbStyles });
+
+		if ( document.getElementById('sb-container-2') ) {
+			SBSyncroBox({ CodLang: 'EN', Currency: 'CHF', MainContainerId: 'sb-container-2', Labels: { NumAdults: { EN: 'Pers.' } }, Styles: sbStyles });
+		}
+		if ( document.getElementById('sb-container-3') ) {
+			SBSyncroBox({ CodLang: 'FR', Currency: 'CHF', MainContainerId: 'sb-container-3', Labels: { NumAdults: { FR: 'Pers.' } }, Styles: sbStyles });
+		}
 	</script>
 	<?php
 }
