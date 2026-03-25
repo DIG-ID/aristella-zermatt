@@ -85,10 +85,6 @@ if ( ! function_exists( 'aristella_get_font_face_styles' ) ) :
 				font-family: 'Univers LT Std Obl';
 				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Obl.woff2') format('woff2'),
 					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Obl.woff') format('woff');
-				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Obl.eot');
-				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Obl.eot?#iefix') format('embedded-opentype'),
-					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Obl.ttf') format('truetype'),
-					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Obl.svg#UniversLTStd-Obl') format('svg');
 				font-weight: normal;
 				font-style: italic;
 				font-display: swap;
@@ -99,10 +95,6 @@ if ( ! function_exists( 'aristella_get_font_face_styles' ) ) :
 				font-family: 'Univers LT Std Cn';
 				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Cn.woff2') format('woff2'),
 					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Cn.woff') format('woff');
-				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Cn.eot');
-				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Cn.eot?#iefix') format('embedded-opentype'),
-					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Cn.ttf') format('truetype'),
-					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-Cn.svg#UniversLTStd-Cn') format('svg');
 				font-weight: normal;
 				font-style: normal;
 				font-display: swap;
@@ -145,10 +137,7 @@ if ( ! function_exists( 'aristella_get_font_face_styles' ) ) :
 				font-style: normal;
 				font-display: swap;
 				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-BoldCn.woff2') format('woff2'),
-					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-BoldCn.woff') format('woff'),
-					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-BoldCn.eot') format('embedded-opentype'),
-					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-BoldCn.ttf') format('truetype'),
-					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-BoldCn.svg#UniversLTStd-BoldCn') format('svg');
+					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-BoldCn.woff') format('woff');
 			}
 
 			/* Univers LT Light */
@@ -186,10 +175,6 @@ if ( ! function_exists( 'aristella_get_font_face_styles' ) ) :
 				font-family: 'Univers LT Std Light CnObl';
 				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCnObl.woff2') format('woff2'),
 					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCnObl.woff') format('woff');
-				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCnObl.eot');
-				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCnObl.eot?#iefix') format('embedded-opentype'),
-					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCnObl.ttf') format('truetype'),
-					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightCnObl.svg#UniversLTStd-LightCnObl') format('svg');
 				font-weight: 300;
 				font-style: italic;
 				font-display: swap;
@@ -200,10 +185,6 @@ if ( ! function_exists( 'aristella_get_font_face_styles' ) ) :
 				font-family: 'Univers LT Std Light Ultra';
 				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightUltraCn.woff2') format('woff2'),
 					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightUltraCn.woff') format('woff');
-				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightUltraCn.eot');
-				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightUltraCn.eot?#iefix') format('embedded-opentype'),
-					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightUltraCn.ttf') format('truetype'),
-					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/UniversLTStd-LightUltraCn.svg#UniversLTStd-LightUltraCn') format('svg');
 				font-weight: 300;
 				font-display: swap;
 			}
@@ -211,11 +192,7 @@ if ( ! function_exists( 'aristella_get_font_face_styles' ) ) :
 			/* Icomoon */
 			@font-face {
 				font-family: 'icomoon';
-				src:  url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/icomoon.eot?fmmubg');
-				src:  url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/icomoon.eot?fmmubg#iefix') format('embedded-opentype'),
-					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/icomoon.ttf?fmmubg') format('truetype'),
-					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/icomoon.woff?fmmubg') format('woff'),
-					url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/icomoon.svg?fmmubg#icomoon') format('svg');
+				src: url('https://www.aristella-zermatt.ch/wp-content/themes/aristella-zermatt/assets/fonts/icomoon.woff?fmmubg') format('woff');
 				font-weight: normal;
 				font-style: normal;
 				font-display: swap;
@@ -271,6 +248,13 @@ function aristella_theme_enqueue_styles() {
 }
 
 add_action( 'wp_enqueue_scripts', 'aristella_theme_enqueue_styles' );
+
+// Preload critical fonts (body + title) to reduce critical path latency
+add_action( 'wp_head', function() {
+	$fonts_uri = get_template_directory_uri() . '/assets/fonts';
+	echo '<link rel="preload" as="font" type="font/woff2" crossorigin href="' . $fonts_uri . '/UniversLTStd-Cn.woff2">' . "\n";
+	echo '<link rel="preload" as="font" type="font/woff2" crossorigin href="' . $fonts_uri . '/UniversLTStd-BoldCn.woff2">' . "\n";
+}, 1 );
 
 // Preload the first hero slider image on the front page for LCP optimisation
 add_action( 'wp_head', function() {
