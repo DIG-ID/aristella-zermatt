@@ -20,7 +20,7 @@ module.exports = {
       primary_bold_cn: ['Univers LT Std Bold Cn', 'sans-serif'],
       primary_light: ['Univers LT Std Light', 'sans-serif'],
       primary_light_italic: ['Univers LT Std Light Obl', 'sans-serif'],
-      primary_light_cn: ['Univers LT Light Cn', 'sans-serif'],
+      primary_light_cn: ['Univers LT Std Light Cn', 'sans-serif'],
       primary_light_cn_italic: ['Univers LT Std Light CnObl', 'sans-serif'],
       primary_light_ultra: ['Univers LT Std Light Ultra', 'sans-serif'],
     },
