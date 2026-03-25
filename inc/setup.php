@@ -12,11 +12,10 @@ function aristella_theme_setup() {
 			'main'        => __( 'Main Menu', 'aristella' ),
 			'main_mobile' => __( 'Main Menu - Mobile', 'aristella' ),
 			'restaurant'  => __( 'Restaurant Menu', 'aristella' ),
-			'copyright'   => __( 'Copryright Menu', 'aristella' ),
+			'copyright'   => __( 'Copyright Menu', 'aristella' ),
 		)
 	);
 
-	add_theme_support( 'menus' );
 	add_theme_support( 'custom-logo' );
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
@@ -70,10 +69,10 @@ add_filter( 'body_class', 'custom_body_classes' );
 
 // Remove "Archives:" prefix from archive page titles
 function aristella_theme_remove_archive_prefix( $title ) {
-	if ( is_post_type_archive( 'category' ) ) :
-		$title = post_type_archive_title( '', false );
-	elseif ( is_post_type_archive( 'tag' ) ) :
-		$title = post_type_archive_title( '', false );
+	if ( is_category() ) :
+		$title = single_cat_title( '', false );
+	elseif ( is_tag() ) :
+		$title = single_tag_title( '', false );
 	endif;
 	return $title;
 }

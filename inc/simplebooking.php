@@ -10,7 +10,7 @@
 
 function aristella_simplebooking_widget() {
 	?>
-	<script type="text/javascript">
+	<script>
 		(function (i, s, o, g, r, a, m) {
 			i['SBSyncroBoxParam'] = r; i[r] = i[r] || function () {
 				(i[r].q = i[r].q || []).push(arguments)
@@ -18,7 +18,7 @@ function aristella_simplebooking_widget() {
 			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
 		})(window, document, 'script', 'https://cdn.simplebooking.it/search-box-script.axd?IDA=4128', 'SBSyncroBox');
 
-		var sbStyles = {
+		const sbStyles = {
 			CustomColor:                       "#3e2d01",
 			CustomLabelColor:                  "#fff3e1",
 			CustomButtonColor:                 "#fff3e1",

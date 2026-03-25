@@ -22,6 +22,7 @@ function aristella_theme_enqueue_styles() {
 	if ( is_page_template( 'page-templates/page-contact.php' ) || is_singular( 'zimmer' ) ) :
 		wp_enqueue_script( 'google-map-settings', get_stylesheet_directory_uri() . '/assets/js/google-maps.js', array( 'jquery' ), $theme_version, true );
 		wp_enqueue_script( 'google-map-api', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBAZN5TfX1aWmjodZ4e_6sOcaJV4D59jfo&callback=initMap', array(), null, true );
+		wp_script_add_data( 'google-map-api', 'strategy', 'async' );
 	endif;
 }
 

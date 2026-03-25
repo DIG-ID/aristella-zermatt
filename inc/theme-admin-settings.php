@@ -48,7 +48,7 @@ add_filter( 'login_headertext', 'theme_login_title' );
 
 // Custom Backend Footer
 function theme_custom_admin_footer() {
-	_e( '<span id="footer-thankyou">Developed by <a href="https://dig.id" target="_blank">dig.id</a></span>.', 'aristella' );
+	echo '<span id="footer-thankyou">' . esc_html__( 'Developed by', 'aristella' ) . ' <a href="https://dig.id" target="_blank">dig.id</a></span>.';
 }
 
 add_filter( 'admin_footer_text', 'theme_custom_admin_footer' );
@@ -56,9 +56,9 @@ add_filter( 'admin_footer_text', 'theme_custom_admin_footer' );
 
 // Change login page logo
 function theme_login_logo() {
-	echo '<style type="text/css">
+	echo '<style>
 	h1 a {
-		background-image: url(' . get_template_directory_uri() . '/assets/images/hotel-resort-alex.min.svg) !important;
+		background-image: url(' . esc_url( get_stylesheet_directory_uri() ) . '/assets/images/hotel-resort-alex.min.svg) !important;
 	}
 	</style>';
 }
@@ -73,9 +73,3 @@ function remove_wp_links( $wp_admin_bar ) {
 }
 
 
-// Custom WordPress Admin Color Scheme
-/*function custom_admin_css() {
-	$theme_version = wp_get_theme()->get( 'Version' );
-	wp_enqueue_style( 'admin-css', get_theme_file_uri( '/build/admin-login.css' ), array(), $theme_version );
-}
-add_action( 'admin_print_styles', 'custom_admin_css' );*/
