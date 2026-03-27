@@ -1,26 +1,31 @@
 import Swiper from 'swiper/bundle';
-// wait until DOM is ready
+
+// Hero swiper initializes on DOMContentLoaded (early) for LCP performance
 document.addEventListener("DOMContentLoaded", () => {
-	//wait until images, links, fonts, stylesheets, and js is loaded
+	if (document.body.classList.contains("page-template-page-home")) {
+		var heroSwiper = new Swiper(".hero-swiper", {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			speed: 1000,
+			loop: true,
+			effect: "slide",
+			direction: 'horizontal',
+			autoplay: {
+				delay: 4500,
+				disableOnInteraction: false,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next-1',
+				prevEl: '.swiper-button-prev-1',
+			},
+		});
+	}
+});
+
+// All other swipers wait for full page load
+document.addEventListener("DOMContentLoaded", () => {
 	window.addEventListener("load", () => {
 		if (document.body.classList.contains("page-template-page-home")) {
-			var heroSwiper = new Swiper(".hero-swiper", {
-				lazy: true,
-				slidesPerView: 1,
-				spaceBetween: 0,
-				speed: 1000,
-				loop: true,
-				effect: "slide",
-    			direction: 'horizontal',
-				autoplay: {
-					delay: 4500,
-					disableOnInteraction: false,
-				},
-				navigation: {
-					nextEl: '.swiper-button-next-1',
-					prevEl: '.swiper-button-prev-1',
-				},
-			});
 			var eventsSwiper = new Swiper(".events-swiper", {
 				lazy: true,
 				slidesPerView: 1,
@@ -67,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
 					prevEl: '.swiper-button-prev-2',
 				},
 			});
-			
+
 			var restaurantSwiper3 = new Swiper(".restaurant-swiper3", {
 				lazy: true,
 				slidesPerView: 1,
@@ -81,7 +86,6 @@ document.addEventListener("DOMContentLoaded", () => {
 					prevEl: '.swiper-button-prev-3',
 				},
 			});
-			
 		}
 
 		if (document.body.classList.contains("single-zimmer")) {
