@@ -29,7 +29,7 @@
 						foreach ( $slider as $slider_id ) :
 							?>
 							<div class="swiper-slide">
-								<div class="slide-bg slide-bg--<?php echo esc_attr( $counter ); ?> w-full min-h-[530px] md:min-h-[750px] xl:min-h-[760px] bg-cover" style="background-image: url('<?php echo esc_url( wp_get_attachment_image_url( $slider_id, 'full' ) ); ?>');background-size: cover; background-repeat: no-repeat;"></div>
+								<div class="slide-bg slide-bg--<?php echo esc_attr( $counter ); ?> w-full min-h-[530px] md:min-h-[750px] xl:min-h-[760px] bg-cover<?php echo $counter === 0 ? ' rocket-no-lazy' : ''; ?>" style="background-image: url('<?php echo esc_url( wp_get_attachment_image_url( $slider_id, 'full' ) ); ?>');background-size: cover; background-repeat: no-repeat;"></div>
 								<?php /*echo wp_get_attachment_image( $slider_id, 'full', false, array( 'class' => 'w-full object-cover min-h-[530px] md:min-h-[750px] xl:min-h-[760px]', 'loading' => 'lazy' ) );*/ ?>
 							</div>
 							<?php
