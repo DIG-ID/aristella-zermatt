@@ -6,7 +6,7 @@
 				<span class="font-primary_light block font-bold"><?php esc_html_e( 'SHOP', 'aristella' ) ?></span>
 			</a>
 			<a class="text-sm uppercase text-beige text-center block bg-no-repeat absolute -bottom-14 left-1/2 -translate-x-1/2 w-[180px] h-[32px]" href="<?php the_field( 'general_vouchershop_url', 'option' ); ?>" target="_blank">
-                <img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/vouchers-band-flip.png" alt="vouchers" title="vouchers">
+                <img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/vouchers-band-flip.png" alt="vouchers" title="vouchers" width="192" height="33">
                 <span class="arrow__voucher w-full absolute bottom-2 left-1/2 -translate-x-1/2 font-primary_light_cn_italic block z-30"><?php esc_html_e( 'ONLINE KAUFEN', 'aristella' ) ?></span>
             </a>
 		</div>
