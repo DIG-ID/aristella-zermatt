@@ -1,4 +1,5 @@
 <header id="header-main" class="header-main w-full fixed top-0 z-40 bg-black header-mask" itemscope itemtype="http://schema.org/WebSite">
+	<a class="skip-link" href="#main-content"><?php esc_html_e( 'Skip to main content', 'aristella' ); ?></a>
 	<nav class="navigation-main bg-black w-full flex items-center py-0 xl:py-0 min-h-[92px]" role="navigation" aria-label="<?php esc_attr_e( 'main navigation', 'aristella' ); ?>">
 		<div id="menu-container" class="menu relative w-full max-w-[1320px] mx-auto items-center justify-evenly xl:pb-14">
 			<div class="site-branding">

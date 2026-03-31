@@ -25,9 +25,9 @@
     "@fancyapps/ui": "^5.0.24",
     "@studio-freight/lenis": "^1.0.22",
     "alpinejs": "^3.13.5",
-    "esbuild": "^0.20.0",
+    "esbuild": "^0.27.4",
     "gsap": "^3.12.2",
     "imagesloaded": "^5.0.0",
-    "swiper": "^10.2.0"
+    "swiper": "^12.1.3"
   }
 }
