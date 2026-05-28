@@ -31,7 +31,7 @@
 			</div>
 			<div class="reservation-menu-wrapper flex">
 				<div id="booking-menu" class="w-44 grid-cols-1">
-					<a href="javascript:;" onclick="Localina.startBooking('5afc91f1-648b-45f1-a57a-31a123c91269', 'https://www.mylocalina.ch');">
+					<a href="https://mytools.aleno.me/reservations/v2.0/reservations.html?k=eyJrIjoid2l2dTVrM2lsNm15cnBiOWlwdzZ4bmViajhycnVkaWRpZ280bGZwODBsbzlhNGlweTEiLCJyIjoicXNjeFFxbzZCODVqUWVvYnMiLCJzIjoiaHR0cHM6Ly9teXRvb2xzLmFsZW5vLm1lLyJ9" data-aleno-booking>
 						<div class="col-span-1 bg-red text-beige font-primary_cn text-[13px] leading-[1.7] tracking-[0.015em] py-[11px] flex flex-col justify-center items-center">
 							<img class="w-4 inline-block mb-2" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/calendar-days.svg" alt="calendar icon" title="calendar icon"><span class="text-center inline-block"><?php esc_html_e( 'TISCH-', 'aristella' ); ?><br><?php esc_html_e( 'RESERVATION', 'aristella' ); ?></span>
 						</div>
@@ -77,5 +77,5 @@ switch ($language_code) {
 		$translated_text = __('Tisch-Reservation', 'aristella');
 } ?>
 <div id="footbar-restaurant" class="flex lg:hidden fixed bg-red bottom-0 h-10 w-full z-50 items-center justify-center">
-    <a href="javascript:;" onclick="Localina.startBooking('5afc91f1-648b-45f1-a57a-31a123c91269', 'https://www.mylocalina.ch');" class="uppercase font-primary_black text-beige w-full text-center"><?php echo esc_html($translated_text); ?></a>
+    <a href="https://mytools.aleno.me/reservations/v2.0/reservations.html?k=eyJrIjoid2l2dTVrM2lsNm15cnBiOWlwdzZ4bmViajhycnVkaWRpZ280bGZwODBsbzlhNGlweTEiLCJyIjoicXNjeFFxbzZCODVqUWVvYnMiLCJzIjoiaHR0cHM6Ly9teXRvb2xzLmFsZW5vLm1lLyJ9" data-aleno-booking class="uppercase font-primary_black text-beige w-full text-center"><?php echo esc_html($translated_text); ?></a>
 </div>

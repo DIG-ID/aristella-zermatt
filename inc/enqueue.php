@@ -28,14 +28,6 @@ function aristella_theme_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts', 'aristella_theme_enqueue_styles' );
 
-// MyLocalina — only on restaurant and home page templates
-function add_mylocalina_script() {
-	if ( is_page_template( array( 'page-templates/page-restaurant.php', 'page-templates/page-home.php' ) ) ) {
-		wp_enqueue_script( 'mylocalina-script', 'https://www.mylocalina.ch/script/widget.js', array(), false, true );
-	}
-}
-
-add_action( 'wp_enqueue_scripts', 'add_mylocalina_script' );
 
 // Dequeue unnecessary frontend styles
 add_action( 'wp_enqueue_scripts', function() {

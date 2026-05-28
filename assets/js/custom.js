@@ -1,3 +1,7 @@
+import { Fancybox } from "@fancyapps/ui";
+
+const ALENO_URL = 'https://mytools.aleno.me/reservations/v2.0/reservations.html?k=eyJrIjoid2l2dTVrM2lsNm15cnBiOWlwdzZ4bmViajhycnVkaWRpZ280bGZwODBsbzlhNGlweTEiLCJyIjoicXNjeFFxbzZCODVqUWVvYnMiLCJzIjoiaHR0cHM6Ly9teXRvb2xzLmFsZW5vLm1lLyJ9';
+
 // wait until DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("load", () => {
@@ -19,25 +23,15 @@ document.addEventListener("DOMContentLoaded", () => {
             frLinks.forEach(function(frLink) {
                 frLink.setAttribute('href', 'https://www.spycher-zermatt.ch/fr');
             });
-
-            //Table Reservation Localina Booking for Restaurant Page "online" link
-            var links = document.querySelectorAll('.localina-booking');
-
-            links.forEach(function (link) {
-                link.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                if (typeof Localina !== 'undefined' && typeof Localina.startBooking === 'function') {
-                    Localina.startBooking(
-                    '5afc91f1-648b-45f1-a57a-31a123c91269',
-                    'https://www.mylocalina.ch'
-                    );
-                } else {
-                    console.warn('Localina not available on this page.');
-                }
-                });
-            });
         }
+
+        // Aleno booking overlay — works on all pages
+        document.querySelectorAll('.localina-booking, [data-aleno-booking]').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                Fancybox.show([{ src: ALENO_URL, type: 'iframe', width: 380, height: 720 }], { mainClass: 'aleno-booking-overlay' });
+            });
+        });
         //image fade animations
 		if (document.body.classList.contains("page-template-page-home") || 
         document.body.classList.contains("page-template-page-benis") || 
