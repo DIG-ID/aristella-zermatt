@@ -28,6 +28,13 @@ add_action( 'wp_enqueue_scripts', function () {
 
 	$lang = $map[ $site_lang ] ?? 'DE';
 
+	$container_map = [
+		'en' => 'sb-container-2',
+		'fr' => 'sb-container-3',
+	];
+
+	$container_id = $container_map[ $site_lang ] ?? 'sb-container';
+
 	wp_register_script( 'simplebooking-syncrobox', false, [], null, true );
 	wp_enqueue_script( 'simplebooking-syncrobox' );
 
@@ -40,6 +47,7 @@ add_action( 'wp_enqueue_scripts', function () {
 		})(window, document, 'script', 'https://cdn.simplebooking.it/search-box-script.axd?IDA=" . esc_js( $hotel_id ) . "', 'SBSyncroBox');
 
 		SBSyncroBox({
+			MainContainerId: '" . esc_js( $container_id ) . "',
 			CodLang: '" . esc_js( $lang ) . "',
 			Currency: 'CHF',
 
