@@ -7,7 +7,7 @@
 		</div>
 
 		<div class="col-span-3 hidden lg:block">
-			<div id="<?php echo (ICL_LANGUAGE_CODE == 'en') ? 'sb-container-2' : ((ICL_LANGUAGE_CODE == 'fr') ? 'sb-container-3' : 'sb-container'); ?>"></div>
+			<?php az_simplebooking_box(); ?>
 		</div>
 
 		<div class="col-span-1 relative grid lg:block">
