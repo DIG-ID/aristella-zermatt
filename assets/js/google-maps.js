@@ -1,7 +1,6 @@
 (function( $ ) {
-    window.initMap = function(){}
   /**
-   * initMap
+   * renderMap
    *
    * Renders a Google Map onto the selected jQuery element
    *
@@ -11,7 +10,7 @@
    * @param   jQuery $el The jQuery element.
    * @return  object The map instance.
    */
-  function initMap( $el ) {
+  function renderMap( $el ) {
     // Find marker elements within map.
     var $markers = $el.find('.marker');
   
@@ -145,11 +144,15 @@
     }
   }
   
-  // Render maps on page load.
-  $(document).on( 'ready', () => {
+  // Called by the Maps API (callback=initMap); scripts may be delayed by WP Rocket, so either may load first.
+  window.initMap = function() {
     $('.acf-map').each(function(){
-      var map = initMap( $(this) );
+      renderMap( $(this) );
     });
-  });
+  };
+
+  if ( window.google && window.google.maps ) {
+    window.initMap();
+  }
   
   })(jQuery);
