@@ -57,8 +57,11 @@ add_filter( 'admin_footer_text', 'theme_custom_admin_footer' );
 // Change login page logo
 function theme_login_logo() {
 	echo '<style>
-	h1 a {
-		background-image: url(' . esc_url( get_stylesheet_directory_uri() ) . '/assets/images/hotel-resort-alex.min.svg) !important;
+	.login h1 a {
+		background-image: url(' . esc_url( content_url( '/uploads/2024/01/aristella-logo.png' ) ) . ') !important;
+		width: 240px !important;
+		height: 69px !important;
+		background-size: contain !important;
 	}
 	</style>';
 }
